@@ -1,0 +1,5 @@
+extraArgs:
+  - --enable-certificate-owner-ref=true
+  - --issuer-ambient-credentials
+
+installCRDs: true
