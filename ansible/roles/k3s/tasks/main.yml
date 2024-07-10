@@ -1,0 +1,56 @@
+# code: language=ansible
+---
+- name: Install K3S Requirements
+  ansible.builtin.apt:
+    update_cache: true
+    pkg:
+      - policycoreutils
+    state: present
+
+# To make sure the the role is idempotent. The tasks after this will only be executed if K3S hasn't been installed already.
+- name: Check if K3S is already installed
+  ansible.builtin.shell:
+    cmd: 'test -f /usr/local/bin/k3s'
+  register: k3s_installed
+  failed_when: false
+
+- name: Download K3s installation script
+  ansible.builtin.uri:
+    url: 'https://get.k3s.io'
+    method: GET
+    return_content: yes
+    dest: '/tmp/k3s_install.sh'
+  when: k3s_installed.rc != 0
+
+- name: Import K3S Token
+  ansible.builtin.include_vars:
+    file: k3s-secrets.yml
+  when: k3s_installed.rc != 0
+
+# Note that the node_type variable is set in the inventory file
+- name: Execute K3s installation script [Initial Master Node]
+  ansible.builtin.shell:
+    cmd: 'sh /tmp/k3s_install.sh --token {{ k3s_token }} --disable=traefik --flannel-backend=vxlan --cluster-init'
+  vars:
+    k3s_token: '{{ k3s_token }}'
+  args:
+    executable: /bin/bash
+  when: node_type | default('undefined') == 'k3s_initial_master' and k3s_installed.rc != 0
+
+# - name: Execute K3s installation script [Master Nodes]
+#   ansible.builtin.shell:
+#     cmd: 'sh /tmp/k3s_install.sh --token {{ k3s_token }} --disable=traefik --flannel-backend=vxlan --server https://{{ hostvars["k3s-master-1"]["ansible_default_ipv4"]["address"] }}:6443'
+#   vars:
+#     k3s_token: '{{ k3s_token }}'
+#   args:
+#     executable: /bin/bash
+#   when: node_type | default('undefined') == 'k3s_master' and k3s_installed.rc != 0
+
+- name: Execute K3s installation script [Worker Nodes]
+  ansible.builtin.shell:
+    cmd: 'sh /tmp/k3s_install.sh agent --token {{ k3s_token }} --server https://{{ hostvars["k3s-master-1"]["ansible_default_ipv4"]["address"] }}:6443'
+  vars:
+    k3s_token: '{{ k3s_token }}'
+  args:
+    executable: /bin/bash
+  when: node_type | default('undefined') == 'k3s_agent' and k3s_installed.rc != 0
