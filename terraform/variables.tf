@@ -49,14 +49,14 @@ variable "num_nodes_mem" {
 variable "template_vm_name" {
   description = "Name of the template VM"
   type        = string
-  default     = "k3s-master"
+  default     = "k3s-template"
 }
 
 variable "master_ips" {
   description = "List of ip addresses for master nodes"
   type        = list(string)
   default = [
-    "192.168.1.0"
+    "192.168.1.156"
   ]
 }
 
@@ -64,7 +64,7 @@ variable "worker_ips" {
   description = "List of ip addresses for worker nodes"
   type        = list(string)
   default = [
-    "192.168.1.0"
+    "192.168.1.157"
   ]
 }
 
