@@ -18,8 +18,7 @@ autoinstall:
     package_upgrade: true
     timezone: America/Los_Angeles
     users:
-      - name: lab
-        passwd: $6$u80lWDtCjzvf3bfJ$HvccjXtD.xtWGsbgKguROlONRyZSS017MnltyN5w83rCWwdzNZdwzvtledRrkfKz9kbkv0lyzbUxuPXelGAbf1
+      - name: dev
         groups: [adm, cdrom, dip, plugdev, lxd, sudo]
         lock-passwd: false
         sudo: ALL=(ALL) NOPASSWD:ALL

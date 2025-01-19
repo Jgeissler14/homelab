@@ -19,8 +19,9 @@ source "proxmox-iso" "ubuntu" {
     "<enter>"
   ]  
   boot_wait    = "10s"
+  memory         = 4096
   disks {
-    disk_size         = "5G"
+    disk_size         = "20G"
     storage_pool      = "local-lvm"
     type              = "scsi"
   }
@@ -42,9 +43,9 @@ source "proxmox-iso" "ubuntu" {
   node                 = "pve"
   password             = "${local.proxmox_password}"
   proxmox_url          = "${local.proxmox_url}"
-  ssh_password         = "${local.proxmox_password}"
   ssh_timeout          = "15m"
-  ssh_username         = "${local.proxmox_username}"
+  ssh_username         = "dev"
+  ssh_private_key_file = "~/.ssh/id_ed25519"
   template_description = "Ubuntu 24.04, generated on ${timestamp()}"
   template_name        = "ubuntu-24.04"
   username             = "${local.proxmox_username}"
