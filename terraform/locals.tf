@@ -1,17 +1,14 @@
 locals {
-    vms = yamldecode(file("./external/vms.yml"))
-    networks = yamldecode(file("./external/network.yml"))
-}
+  vms      = yamldecode(file("./external/vms.yml"))
+  networks = yamldecode(file("./external/network.yml"))
 
-resource "random_password" "vm_password" {
-  length  = 16
-  special = true
-}
-
-# terraform output -json vm_passwords
-output "vm_passwords" {
-  value = {
-    for vm in keys(local.vms) : vm => random_password.vm_password[vm].result
+  tags = {
+    environment = "homelab"
+    created_on  = timestamp()
   }
-  sensitive = true
 }
+
+# resource "random_password" "vm_password" {
+#   length  = 16
+#   special = true
+# }
