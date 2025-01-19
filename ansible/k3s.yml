@@ -1,9 +1,0 @@
-# code: language=ansible
-# K3S Ansible Playbook
----
-- name: K3S
-  hosts: k3s
-  gather_facts: true
-  roles:
-    - role: k3s
-      become: true
