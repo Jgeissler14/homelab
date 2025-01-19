@@ -1,0 +1,4 @@
+internal:
+  bridge: vmbr0
+  gateway: 192.168.0.1
+  cidr: 24

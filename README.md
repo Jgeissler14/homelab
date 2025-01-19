@@ -1,30 +1,29 @@
 # homelab
+Add Desc
 
-# TODO
-set up packer 
-then terraform from packer images
-then isntall k3s
-then open pg
+## Building
+Steps to provision
 
+### Packer
+```
+cd packer
+packer init .
+packer build .
+```
 
-ansible-playbook k3s.yml -K
+### Terraform
+```
+cd terraform
+tf init
+tf apply
+```
 
-ssh k3s-ops@192.168.1.143
+### Ansible
 
-code ~/.ssh/config
-Host github.com
-  AddKeysToAgent yes
-  IdentityFile ~/.ssh/id
+ansible-playbook playbooks/site.yml -i inventory.yml
 
-Host k3s-controller-1
-  User k3s-ops
-  HostName 192.168.1.169
-  IdentityFile ~/.ssh/id
+code ~/.ssh/config if needed
 
-Host k3s-agent-1
-  User k3s-ops
-  HostName 192.168.1.168
-  IdentityFile ~/.ssh/id
 
 sudo chmod 644 /etc/rancher/k3s/k3s.yaml
 

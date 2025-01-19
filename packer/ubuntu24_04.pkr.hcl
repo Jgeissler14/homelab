@@ -7,7 +7,7 @@ packer {
   }
 }
 
-source "proxmox-iso" "ubuntu" {
+source "proxmox" "ubuntu" {
   boot_command = [
     "c<wait>",
     "linux /casper/vmlinuz --- only-ubiquity autoinstall net.ifnames=0 biosdevname=0 ip=dhcp ipv6.disable=1 ds=\"nocloud-net;seedfrom=http://{{.HTTPIP}}:{{.HTTPPort}}/\"", // IPv6 disabled to fix hang: https://answers.launchpad.net/ubuntu/+source/ubiquity/+question/698383
@@ -17,13 +17,16 @@ source "proxmox-iso" "ubuntu" {
     "initrd<enter><wait>",
     "boot",
     "<enter>"
-  ]  
-  boot_wait    = "10s"
-  memory         = 4096
+  ]
+  boot_wait = "10s"
+  memory    = 4096
+  cloud_init = true
+  cloud_init_storage_pool = "local-lvm"
   disks {
-    disk_size         = "20G"
-    storage_pool      = "local-lvm"
-    type              = "scsi"
+    disk_size    = "20G"
+    storage_pool = "local-lvm"
+    format       = "raw"
+    type         = "scsi"
   }
   efi_config {
     efi_storage_pool  = "local-lvm"
@@ -34,7 +37,7 @@ source "proxmox-iso" "ubuntu" {
   http_directory           = "http"
   insecure_skip_tls_verify = true
   boot_iso {
-    iso_file                 = "local:iso/ubuntu-24.04.1-live-server-amd64.iso"
+    iso_file = "local:iso/ubuntu-24.04.1-live-server-amd64.iso"
   }
   network_adapters {
     bridge = "vmbr0"
@@ -52,11 +55,17 @@ source "proxmox-iso" "ubuntu" {
 }
 
 build {
-  sources = ["source.proxmox-iso.ubuntu"]
+  sources = ["source.proxmox.ubuntu"]
 
   // Copy the SSH key to the VM
   provisioner "file" {
     source      = "/Users/joshuageissler/.ssh/id_ed25519"
     destination = "~/.ssh/"
+  }
+
+  provisioner "shell" {
+    inline = [
+      "sudo apt-get update"
+    ]
   }
 }

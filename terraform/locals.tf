@@ -1,40 +1,17 @@
-#################################################
-# locals.tf
-#
-# This file contains the local variables for the Terraform configuration.
-
 locals {
+    vms = yamldecode(file("./external/vms.yml"))
+    networks = yamldecode(file("./external/network.yml"))
+}
 
-  # Pull in our config files
-  lab      = yamldecode(file("../external/lab.yml"))
-  networks = yamldecode(file("../external/networks.yml"))
-  vms      = yamldecode(file("../external/vms.yml"))
+resource "random_password" "vm_password" {
+  length  = 16
+  special = true
+}
 
-
-  # Get our datastores
-  vm_ds = element(data.proxmox_virtual_environment_datastores.lab.datastore_ids,
-    index(
-      data.proxmox_virtual_environment_datastores.lab.datastore_ids,
-      "ceph-vm"
-    )
-  )
-  ds1618_ds = element(data.proxmox_virtual_environment_datastores.lab.datastore_ids,
-    index(
-      data.proxmox_virtual_environment_datastores.lab.datastore_ids,
-      "ds1618"
-    )
-  )
-  cephfs_ds = element(data.proxmox_virtual_environment_datastores.lab.datastore_ids,
-    index(
-      data.proxmox_virtual_environment_datastores.lab.datastore_ids,
-      "cephfs"
-    )
-  )
-
-  container_ds = element(data.proxmox_virtual_environment_datastores.lab.datastore_ids,
-    index(
-      data.proxmox_virtual_environment_datastores.lab.datastore_ids,
-      "ceph-ct"
-    )
-  )
+# terraform output -json vm_passwords
+output "vm_passwords" {
+  value = {
+    for vm in keys(local.vms) : vm => random_password.vm_password[vm].result
+  }
+  sensitive = true
 }

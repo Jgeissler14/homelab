@@ -1,0 +1,33 @@
+k8s-master-1:
+  cores: 2
+  memory: 4096
+  pve_node: pve
+  desc: K8s Master 1
+  template: ubuntu-24.04
+  scsihw: virtio-scsi-pci
+  autostart: true
+  dynamic:
+    networks:
+      primary:
+        net: internal
+        ip: 192.168.0.21
+        firewall: false
+        link_down: false
+        model: virtio
+
+k8s-worker-1:
+  cores: 2
+  memory: 4096
+  pve_node: pve
+  desc: K8s Worker 1
+  template: ubuntu-24.04
+  scsihw: virtio-scsi-pci
+  autostart: true
+  dynamic:
+    networks:
+      primary:
+        net: internal
+        ip: 10.0.0.22
+        firewall: false
+        link_down: false
+        model: virtio
