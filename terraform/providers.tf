@@ -7,9 +7,6 @@ terraform {
       source ="Terraform-For-Proxmox/proxmox"
       version = "0.0.1"
     }
-    bpg = {
-      source = "bpg/proxmox"
-    }
     tls = {
       source = "hashicorp/tls"
     }
@@ -28,14 +25,5 @@ provider "telmate" {
     _default = "debug"
     _capturelog = ""
  }
-}
-
-provider "bpg" {
-
-  endpoint = "https://pve-01.lan.pezlab.dev:8006/"
-  username = "root@pam"
-  password = data.vault_generic_secret.shared.data["root_password"]
-  insecure = true
-
 }
 

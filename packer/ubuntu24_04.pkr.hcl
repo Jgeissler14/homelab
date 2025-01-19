@@ -8,7 +8,16 @@ packer {
 }
 
 source "proxmox-iso" "ubuntu" {
-  boot_command = ["<up><tab> ip=dhcp inst.cmdline inst.ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/ks.cfg<enter>"]
+  boot_command = [
+    "c<wait>",
+    "linux /casper/vmlinuz --- only-ubiquity autoinstall net.ifnames=0 biosdevname=0 ip=dhcp ipv6.disable=1 ds=\"nocloud-net;seedfrom=http://{{.HTTPIP}}:{{.HTTPPort}}/\"", // IPv6 disabled to fix hang: https://answers.launchpad.net/ubuntu/+source/ubiquity/+question/698383
+    "<enter><wait>",
+    "initrd /casper/", // This is weird, but for some reason my proxmox/packer runs will ignore anything after '/casper/'
+    "<enter><wait>",   //  so we throw in another enter/wait before typing in just 'initrd'
+    "initrd<enter><wait>",
+    "boot",
+    "<enter>"
+  ]  
   boot_wait    = "10s"
   disks {
     disk_size         = "5G"
@@ -20,8 +29,8 @@ source "proxmox-iso" "ubuntu" {
     efi_type          = "4m"
     pre_enrolled_keys = true
   }
-  # this can be used to host public files for the VM
-  # http_directory           = "config"
+
+  http_directory           = "http"
   insecure_skip_tls_verify = true
   boot_iso {
     iso_file                 = "local:iso/ubuntu-24.04.1-live-server-amd64.iso"
