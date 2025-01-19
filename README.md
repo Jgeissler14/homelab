@@ -20,7 +20,7 @@ tf apply
 
 ### Ansible
 
-ansible-playbook playbooks/site.yml -i inventory.yml
+ansible-playbook site.yml -i inventory.yml
 
 code ~/.ssh/config if needed
 

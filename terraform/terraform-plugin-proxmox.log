@@ -30072,3 +30072,2271 @@ Server: pve-api-daemon/3.0
 {"data":null}
 2025/01/18 23:20:42 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
 [90mSat, 18 Jan 2025 23:20:42 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:20:45 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:20:45 GMT
+Expires: Sun, 19 Jan 2025 07:20:45 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:20:45 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:20:45 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:20:47 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:20:50 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:20:50 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:20:50 GMT
+Expires: Sun, 19 Jan 2025 07:20:50 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:20:50 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:20:50 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:20:53 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:20:53 GMT
+Expires: Sun, 19 Jan 2025 07:20:53 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:20:53 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:20:53 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:20:55 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:20:58 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:20:58 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:20:58 GMT
+Expires: Sun, 19 Jan 2025 07:20:58 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:20:58 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:20:58 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:21:01 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:21:01 GMT
+Expires: Sun, 19 Jan 2025 07:21:01 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:21:01 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:21:01 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:21:03 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:21:06 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:21:06 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:21:06 GMT
+Expires: Sun, 19 Jan 2025 07:21:06 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:21:06 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:21:06 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:21:09 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:21:09 GMT
+Expires: Sun, 19 Jan 2025 07:21:09 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:21:09 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:21:09 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:21:11 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:21:14 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:21:14 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:21:14 GMT
+Expires: Sun, 19 Jan 2025 07:21:14 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:21:14 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:21:14 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:21:17 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:21:17 GMT
+Expires: Sun, 19 Jan 2025 07:21:17 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:21:17 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:21:17 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:21:19 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:21:22 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:21:22 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:21:22 GMT
+Expires: Sun, 19 Jan 2025 07:21:22 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:21:22 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:21:22 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:21:25 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:21:25 GMT
+Expires: Sun, 19 Jan 2025 07:21:25 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:21:25 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:21:25 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:21:27 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:21:30 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:21:30 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:21:30 GMT
+Expires: Sun, 19 Jan 2025 07:21:30 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:21:30 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:21:30 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:21:33 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:21:33 GMT
+Expires: Sun, 19 Jan 2025 07:21:33 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:21:33 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:21:33 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:21:35 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:21:38 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:21:38 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:21:38 GMT
+Expires: Sun, 19 Jan 2025 07:21:38 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:21:38 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:21:38 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:21:41 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:21:41 GMT
+Expires: Sun, 19 Jan 2025 07:21:41 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:21:41 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:21:41 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:21:43 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:21:46 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:21:46 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:21:47 GMT
+Expires: Sun, 19 Jan 2025 07:21:47 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:21:46 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:21:46 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:21:49 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:21:49 GMT
+Expires: Sun, 19 Jan 2025 07:21:49 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:21:49 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:21:49 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:21:51 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:21:54 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:21:55 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:21:55 GMT
+Expires: Sun, 19 Jan 2025 07:21:55 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:21:55 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:21:55 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:21:57 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:21:57 GMT
+Expires: Sun, 19 Jan 2025 07:21:57 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:21:57 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:21:57 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:22:00 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:22:02 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:22:03 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:22:03 GMT
+Expires: Sun, 19 Jan 2025 07:22:03 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:22:03 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:22:03 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:22:05 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:22:05 GMT
+Expires: Sun, 19 Jan 2025 07:22:05 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:22:05 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:22:05 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:22:08 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:22:10 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:22:11 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:22:11 GMT
+Expires: Sun, 19 Jan 2025 07:22:11 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:22:11 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:22:11 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:22:13 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:22:13 GMT
+Expires: Sun, 19 Jan 2025 07:22:13 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:22:13 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:22:13 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:22:16 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:22:18 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:22:19 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:22:19 GMT
+Expires: Sun, 19 Jan 2025 07:22:19 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:22:19 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:22:19 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:22:21 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:22:22 GMT
+Expires: Sun, 19 Jan 2025 07:22:22 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:22:21 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:22:21 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:22:24 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:22:26 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:22:27 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:22:27 GMT
+Expires: Sun, 19 Jan 2025 07:22:27 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:22:27 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:22:27 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:22:30 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:22:30 GMT
+Expires: Sun, 19 Jan 2025 07:22:30 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:22:30 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:22:30 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:22:32 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:22:35 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:22:35 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:22:35 GMT
+Expires: Sun, 19 Jan 2025 07:22:35 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:22:35 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:22:35 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:22:38 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:22:38 GMT
+Expires: Sun, 19 Jan 2025 07:22:38 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:22:38 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:22:38 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:22:40 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:22:43 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:22:43 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:22:43 GMT
+Expires: Sun, 19 Jan 2025 07:22:43 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:22:43 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:22:43 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:22:46 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:22:46 GMT
+Expires: Sun, 19 Jan 2025 07:22:46 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:22:46 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:22:46 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:22:48 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:22:51 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:22:51 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:22:51 GMT
+Expires: Sun, 19 Jan 2025 07:22:51 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:22:51 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:22:51 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:22:54 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:22:54 GMT
+Expires: Sun, 19 Jan 2025 07:22:54 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:22:54 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:22:54 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:22:56 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:22:59 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:22:59 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:22:59 GMT
+Expires: Sun, 19 Jan 2025 07:22:59 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:22:59 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:22:59 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:23:02 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:23:02 GMT
+Expires: Sun, 19 Jan 2025 07:23:02 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:23:02 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:23:02 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:23:04 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:23:07 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:23:07 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:23:07 GMT
+Expires: Sun, 19 Jan 2025 07:23:07 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:23:07 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:23:07 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:23:10 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:23:10 GMT
+Expires: Sun, 19 Jan 2025 07:23:10 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:23:10 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:23:10 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:23:12 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:23:15 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:23:15 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:23:15 GMT
+Expires: Sun, 19 Jan 2025 07:23:15 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:23:15 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:23:15 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:23:18 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:23:18 GMT
+Expires: Sun, 19 Jan 2025 07:23:18 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:23:18 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:23:18 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:23:20 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:23:23 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:23:23 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:23:23 GMT
+Expires: Sun, 19 Jan 2025 07:23:23 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:23:23 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:23:23 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:23:26 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:23:26 GMT
+Expires: Sun, 19 Jan 2025 07:23:26 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:23:26 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:23:26 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:23:28 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:23:31 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:23:31 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:23:31 GMT
+Expires: Sun, 19 Jan 2025 07:23:31 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:23:31 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:23:31 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:23:34 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:23:34 GMT
+Expires: Sun, 19 Jan 2025 07:23:34 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:23:34 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:23:34 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:23:36 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:23:39 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:23:39 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:23:39 GMT
+Expires: Sun, 19 Jan 2025 07:23:39 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:23:39 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:23:39 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:23:42 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:23:42 GMT
+Expires: Sun, 19 Jan 2025 07:23:42 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:23:42 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:23:42 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:23:44 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:23:47 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:23:47 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:23:47 GMT
+Expires: Sun, 19 Jan 2025 07:23:47 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:23:47 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:23:47 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:23:50 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:23:50 GMT
+Expires: Sun, 19 Jan 2025 07:23:50 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:23:50 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:23:50 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:23:52 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:23:55 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:23:55 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:23:55 GMT
+Expires: Sun, 19 Jan 2025 07:23:55 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:23:55 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:23:55 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:23:58 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:23:58 GMT
+Expires: Sun, 19 Jan 2025 07:23:58 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:23:58 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:23:58 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:24:00 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:24:03 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:24:03 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:24:04 GMT
+Expires: Sun, 19 Jan 2025 07:24:04 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:24:03 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:24:03 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:24:06 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:24:06 GMT
+Expires: Sun, 19 Jan 2025 07:24:06 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:24:06 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:24:06 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:24:08 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:24:11 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:24:12 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:24:12 GMT
+Expires: Sun, 19 Jan 2025 07:24:12 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:24:12 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:24:12 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:24:14 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:24:14 GMT
+Expires: Sun, 19 Jan 2025 07:24:14 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:24:14 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:24:14 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:24:17 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:24:19 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:24:20 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:24:20 GMT
+Expires: Sun, 19 Jan 2025 07:24:20 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:24:20 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:24:20 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:24:22 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:24:22 GMT
+Expires: Sun, 19 Jan 2025 07:24:22 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:24:22 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:24:22 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:24:25 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:24:27 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:24:28 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:24:28 GMT
+Expires: Sun, 19 Jan 2025 07:24:28 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:24:28 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:24:28 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:24:30 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:24:30 GMT
+Expires: Sun, 19 Jan 2025 07:24:30 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:24:30 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:24:30 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:24:33 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:24:35 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:24:36 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:24:36 GMT
+Expires: Sun, 19 Jan 2025 07:24:36 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:24:36 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:24:36 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:24:38 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:24:38 GMT
+Expires: Sun, 19 Jan 2025 07:24:38 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:24:38 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:24:38 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:24:41 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:24:43 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:24:44 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:24:44 GMT
+Expires: Sun, 19 Jan 2025 07:24:44 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:24:44 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:24:44 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:24:46 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:24:46 GMT
+Expires: Sun, 19 Jan 2025 07:24:46 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:24:46 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:24:46 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:24:49 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:24:51 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:24:52 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:24:52 GMT
+Expires: Sun, 19 Jan 2025 07:24:52 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:24:52 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:24:52 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:24:54 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:24:54 GMT
+Expires: Sun, 19 Jan 2025 07:24:54 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:24:54 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:24:54 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:24:57 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:24:59 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:25:00 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:25:00 GMT
+Expires: Sun, 19 Jan 2025 07:25:00 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:25:00 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:25:00 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:25:02 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:25:02 GMT
+Expires: Sun, 19 Jan 2025 07:25:02 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:25:02 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:25:02 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:25:05 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:25:07 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:25:08 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:25:08 GMT
+Expires: Sun, 19 Jan 2025 07:25:08 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:25:08 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:25:08 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:25:10 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:25:10 GMT
+Expires: Sun, 19 Jan 2025 07:25:10 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:25:10 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:25:10 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:25:13 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:25:15 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:25:16 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:25:16 GMT
+Expires: Sun, 19 Jan 2025 07:25:16 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:25:16 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:25:16 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:25:18 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:25:18 GMT
+Expires: Sun, 19 Jan 2025 07:25:18 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:25:18 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:25:18 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:25:21 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:25:23 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:25:24 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:25:24 GMT
+Expires: Sun, 19 Jan 2025 07:25:24 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:25:24 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:25:24 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:25:26 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:25:27 GMT
+Expires: Sun, 19 Jan 2025 07:25:27 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:25:26 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:25:26 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:25:29 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:25:31 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:25:32 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:25:32 GMT
+Expires: Sun, 19 Jan 2025 07:25:32 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:25:32 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:25:32 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:25:35 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:25:35 GMT
+Expires: Sun, 19 Jan 2025 07:25:35 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:25:35 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:25:35 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:25:37 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:25:40 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:25:40 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:25:40 GMT
+Expires: Sun, 19 Jan 2025 07:25:40 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:25:40 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:25:40 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:25:43 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:25:43 GMT
+Expires: Sun, 19 Jan 2025 07:25:43 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:25:43 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:25:43 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:25:45 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:25:48 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:25:48 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:25:48 GMT
+Expires: Sun, 19 Jan 2025 07:25:48 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:25:48 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:25:48 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:25:51 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:25:51 GMT
+Expires: Sun, 19 Jan 2025 07:25:51 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:25:51 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:25:51 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:25:53 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:25:56 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:25:56 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:25:56 GMT
+Expires: Sun, 19 Jan 2025 07:25:56 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:25:56 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:25:56 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:25:59 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:25:59 GMT
+Expires: Sun, 19 Jan 2025 07:25:59 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:25:59 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:25:59 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:26:01 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:26:04 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:26:04 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:26:04 GMT
+Expires: Sun, 19 Jan 2025 07:26:04 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:26:04 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:26:04 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:26:07 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:26:07 GMT
+Expires: Sun, 19 Jan 2025 07:26:07 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:26:07 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:26:07 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:26:09 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:26:12 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:26:12 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:26:12 GMT
+Expires: Sun, 19 Jan 2025 07:26:12 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:26:12 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:26:12 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:26:15 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:26:15 GMT
+Expires: Sun, 19 Jan 2025 07:26:15 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:26:15 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:26:15 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:26:17 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:26:20 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:26:20 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:26:20 GMT
+Expires: Sun, 19 Jan 2025 07:26:20 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:26:20 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:26:20 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:26:23 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:26:23 GMT
+Expires: Sun, 19 Jan 2025 07:26:23 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:26:23 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:26:23 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:26:25 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:26:28 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:26:29 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:26:29 GMT
+Expires: Sun, 19 Jan 2025 07:26:29 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:26:29 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:26:29 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:26:31 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:26:31 GMT
+Expires: Sun, 19 Jan 2025 07:26:31 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:26:31 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:26:31 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:26:34 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:26:36 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:26:37 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:26:37 GMT
+Expires: Sun, 19 Jan 2025 07:26:37 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:26:37 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:26:37 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:26:39 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:26:39 GMT
+Expires: Sun, 19 Jan 2025 07:26:39 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:26:39 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:26:39 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:26:42 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:26:44 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:26:45 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:26:45 GMT
+Expires: Sun, 19 Jan 2025 07:26:45 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:26:45 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:26:45 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:26:47 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:26:47 GMT
+Expires: Sun, 19 Jan 2025 07:26:47 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:26:47 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:26:47 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:26:50 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:26:52 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:26:53 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:26:53 GMT
+Expires: Sun, 19 Jan 2025 07:26:53 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:26:53 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:26:53 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:26:55 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:26:55 GMT
+Expires: Sun, 19 Jan 2025 07:26:55 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:26:55 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:26:55 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:26:58 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:27:00 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:27:01 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:27:01 GMT
+Expires: Sun, 19 Jan 2025 07:27:01 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:27:01 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:27:01 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:27:03 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:27:03 GMT
+Expires: Sun, 19 Jan 2025 07:27:03 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:27:03 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:27:03 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:27:06 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:27:08 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:27:09 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:27:09 GMT
+Expires: Sun, 19 Jan 2025 07:27:09 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:27:09 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:27:09 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:27:11 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:27:11 GMT
+Expires: Sun, 19 Jan 2025 07:27:11 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:27:11 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:27:11 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
+2025/01/18 23:27:14 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/102/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:27:16 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/100/agent/network-get-interfaces HTTP/1.1
+Host: 192.168.0.80:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAuthCookie=PVE:root@pam:678CA562::tEmccOoLYiorb0QXSxjBe+cI19754zLEHEIwZ9HDx96wqwhQbqsVumO5Ddd08llhVVNuEpcZB8VqqX5zgUEs+K+kFAEZOdvyHfiZt9ZYn1Tq7JwmU0aF2bQ2Dyt+BEdPHk39u/CJ1l3PJwZxN6Q4hZDJ5Fuzpueve624KlfiXnKW+qftaMrOe8tM9HrjEZ5XJ+2oQbBc3gEMWFgbER++PrTzUhadozKDsoX2VNRzvJP84I5wS+vWOYTxxhLM4TSCXQXjeVqEHK1Z3TOoT19tW97silzDBKYDcL50NLYwJ+F16U/JkOS1WAyAE2M1yUt1kLaz8k6KJPedS0BLpbKnjA==
+CSRFPreventionToken: 678CA562:BGzBdLZh4qEIakDo6Dbw8Kjk8PPhfkGjnzOitZWwYDI
+Accept-Encoding: gzip
+
+2025/01/18 23:27:17 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:27:17 GMT
+Expires: Sun, 19 Jan 2025 07:27:17 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:27:17 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:27:17 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m102
+2025/01/18 23:27:20 <<<<<<<<<< RESULT:
+HTTP/1.1 500 QEMU guest agent is not running
+Connection: close
+Content-Length: 13
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 19 Jan 2025 07:27:20 GMT
+Expires: Sun, 19 Jan 2025 07:27:20 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":null}
+2025/01/18 23:27:20 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+[90mSat, 18 Jan 2025 23:27:20 -0800[0m [33mDBG[0m [1mgithub.com/Terraform-for-Proxmox/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:2312[0m[36m >[0m check ip result error 500 QEMU guest agent is not running [36mloggerName=[0minitConnInfo [36mvmid=[0m100
