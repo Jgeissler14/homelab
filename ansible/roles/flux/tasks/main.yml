@@ -1,0 +1,19 @@
+---
+- name: Install Flux CLI
+  homebrew:
+    name: fluxcd/tap/flux
+    state: present
+
+- name: Bootstrap Flux
+  command: >
+    flux bootstrap github
+    --token-auth
+    --owner={{ github_username }}
+    --repository={{github_repo}}
+    --branch=main
+    --path k3s/clusters/production
+  # args:
+  #   creates: "{{ playbook_dir }}/clusters/my-cluster"
+  environment:
+    GITHUB_TOKEN: "{{ gh_flux_pat }}"
+  register: flux_bootstrap

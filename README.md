@@ -4,6 +4,14 @@ Add Desc
 ## Building
 Steps to provision
 
+## Secrets
+Configure a secrets.yml file in the ansible directory, make sure it is not commited to git by including in .gitignore if you name differently
+
+ansible_become_password: <SUDO PASSWORD>
+gh_flux_pat: <GITHUB PERSONAL ACCESS TOKEN>
+github_username: <username>
+github_repo: <repository>
+
 ### Packer
 ```
 cd packer
