@@ -35,21 +35,15 @@ kind: Namespace
 metadata:
   name: cnpg-cluster
 ---
-apiVersion: helm.toolkit.fluxcd.io/v2
-kind: HelmRelease
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
 metadata:
-  name: cnpg-cluster
-  namespace: cnpg-cluster
+  name: cluster-example
 spec:
-  interval: 30m
-  chart:
-    spec:
-      chart: cloudnative-pg
-      version: "*"
-      sourceRef:
-        kind: HelmRepository
-        name: cluster
-        namespace: cnpg-cluster
-      interval: 12h
-  values:
-    installCRDs: true
+  instances: 3
+
+  storage:
+    size: 1Gi
+    
+  monitoring:
+    enablePodMonitor: true
