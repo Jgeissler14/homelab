@@ -3,5 +3,13 @@ kind: Kustomization
 resources:
   - cert-manager.yaml
   - ingress-nginx.yaml
-  - kube-prometheus-stack.yaml
   - cloudnative-pg.yaml
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - kube-prometheus-stack.yaml
+patches:
+  - path: kube-prometheus-stack-values.yaml
+    target:
+      kind: HelmRelease
