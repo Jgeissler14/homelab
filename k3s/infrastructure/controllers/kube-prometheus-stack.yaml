@@ -31,5 +31,5 @@ spec:
         name: prometheus-community
         namespace: kube-prometheus-stack
       interval: 12h
-  valuesFiles:
-    - values/kube-prometheus-stack-values.yaml
+      valuesFiles:
+        - values/kube-prometheus-stack-values.yaml
