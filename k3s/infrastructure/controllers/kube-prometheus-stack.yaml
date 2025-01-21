@@ -32,4 +32,4 @@ spec:
         namespace: kube-prometheus-stack
       interval: 12h
       valuesFiles:
-        - ./values/kube-prometheus-stack-values.yaml
+        - ./k3s/infrastructure/controllers/values/kube-prometheus-stack-values.yaml
