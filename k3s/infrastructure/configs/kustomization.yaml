@@ -9,4 +9,4 @@ configMapGenerator:
   - name: grafana-datasources
     namespace: kube-prometheus-stack
     files:
-      - dashboard.yaml
+      - dashboard.json
