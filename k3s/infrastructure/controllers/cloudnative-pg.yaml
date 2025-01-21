@@ -51,3 +51,5 @@ spec:
         name: cluster
         namespace: cnpg-cluster
       interval: 12h
+  values:
+    installCRDs: true
