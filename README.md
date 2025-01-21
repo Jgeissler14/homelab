@@ -1,5 +1,12 @@
 # homelab
-Add Desc
+A personal infrastructure setup leveraging modern tools and technologies for automation, configuration management, and cluster orchestration. This repository showcases a complete homelab environment featuring:
+
+Ansible: Automated configuration management and provisioning.
+Terraform: Infrastructure as Code for building and managing resources.
+Packer: Building reusable machine images for deployments.
+K3s: Lightweight Kubernetes for orchestrating workloads.
+FluxCD: Continuous delivery with GitOps for seamless application updates.
+Designed for experimentation, learning, and testing real-world DevOps practices in a self-contained environment.
 
 ## Building
 Steps to provision
