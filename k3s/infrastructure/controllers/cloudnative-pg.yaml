@@ -29,22 +29,3 @@ spec:
         name: cnpg
         namespace: cnpg-system
       interval: 12h
----
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: cnpg-cluster
----
-apiVersion: postgresql.cnpg.io/v1
-kind: Cluster
-metadata:
-  name: home-cluster
-  namespace: cnpg-cluster
-spec:
-  instances: 3
-
-  storage:
-    size: 1Gi
-
-  monitoring:
-    enablePodMonitor: true
