@@ -31,9 +31,4 @@ spec:
         name: prometheus-community
         namespace: kube-prometheus-stack
       interval: 12h
-  values:
-    controller:
-      service:
-        type: "ClusterIP"
-    admissionWebhooks:
-      enabled: false
+    valuesFiles: kube-prometheus-stack-values.yaml
