@@ -8,7 +8,7 @@ locals {
   }
 }
 
-# resource "random_password" "vm_password" {
-#   length  = 16
-#   special = true
-# }
+resource "random_password" "vm_password" {
+  length  = 16
+  special = true
+}

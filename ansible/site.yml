@@ -3,6 +3,8 @@
   hosts: k3s_cluster
   gather_facts: true
   become: true
+  vars_files:
+    - secrets.yml
   roles:
     - role: prereq
     - role: airgap
@@ -11,11 +13,22 @@
 - name: Setup K3S server
   hosts: server
   become: true
+  vars_files:
+    - secrets.yml
   roles:
     - role: k3s_server
 
 - name: Setup K3S agent
   hosts: agent
   become: true
+  vars_files:
+    - secrets.yml
   roles:
     - role: k3s_agent
+
+- name: Install Flux
+  hosts: localhost
+  vars_files:
+    - secrets.yml
+  roles:
+    - role: flux
