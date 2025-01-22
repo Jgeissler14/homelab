@@ -20,7 +20,7 @@ metadata:
   name: google-release
   namespace: google
 spec:
-  releaseName: podinfo
+  releaseName: google
   chart:
     spec:
       chart: helm
