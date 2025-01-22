@@ -7,28 +7,30 @@ metadata:
     toolkit.fluxcd.io/tenant: sre-team
 ---
 apiVersion: source.toolkit.fluxcd.io/v1beta1
-kind: HelmRepository
+kind: GitRepository
 metadata:
-  name: google-repo
+  name: google
   namespace: google
 spec:
-  url: https://github.com/jgeissler14/google/helm
+  interval: 5m
+  url: https://github.com/jgeissler14/google
+  ref:
+    branch: main
 ---
-apiVersion: helm.toolkit.fluxcd.io/v2
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: google-release
+  name: google
   namespace: google
 spec:
+  interval: 1m
   releaseName: google
   chart:
     spec:
       chart: helm
       sourceRef:
-        kind: HelmRepository
-        name: google-repo
-        namespace: google
-  interval: 20m # change to 1m for testing
-  install:
-    remediation:
-      retries: 3
+        kind: GitRepository
+        name: google
+  values:
+    image:
+      tag: latest
