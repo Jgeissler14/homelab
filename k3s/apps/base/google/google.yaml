@@ -7,27 +7,26 @@ metadata:
     toolkit.fluxcd.io/tenant: sre-team
 ---
 apiVersion: source.toolkit.fluxcd.io/v1beta1
-kind: GitRepository
+kind: HelmRepository
 metadata:
   name: google-repo
   namespace: google
 spec:
-  interval: 1m
-  url: https://github.com/jgeissler14/google
-  ref:
-    branch: main
+  url: https://github.com/jgeissler14/google/helm
 ---
-apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
-kind: Kustomization
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
 metadata:
-  name: google-kustomization
+  name: google-release
   namespace: google
 spec:
   interval: 5m
-  path: "./helm"
-  prune: true
-  sourceRef:
-    kind: GitRepository
-    name: google-repo
-    namespace: google
-  validation: client
+  chart:
+    spec:
+      chart: helm # Assuming the chart is in the 'google' directory of the repository
+      sourceRef:
+        kind: HelmRepository
+        name: google-repo
+        namespace: google
+  values:
+    # Add your Helm values here
