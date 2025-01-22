@@ -12,7 +12,7 @@ metadata:
   name: google
   namespace: google
 spec:
-  interval: 5m
+  interval: 1m
   url: https://github.com/jgeissler14/google
   ref:
     branch: main
