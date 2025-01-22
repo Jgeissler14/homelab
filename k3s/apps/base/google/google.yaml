@@ -27,7 +27,7 @@ spec:
   releaseName: google
   chart:
     spec:
-      chart: helm
+      chart: helm/google
       sourceRef:
         kind: GitRepository
         name: google
