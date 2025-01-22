@@ -10,7 +10,7 @@ apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:
   name: google
-  namespace: default
+  namespace: google
 spec:
   interval: 5m0s
-  url: https://github.com/jgeissler14/google
+  url: https://github.com/jgeissler14/google/helm
