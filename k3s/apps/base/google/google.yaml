@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: google
+  labels:
+    toolkit.fluxcd.io/tenant: sre-team
+---
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: HelmRepository
+metadata:
+  name: google
+  namespace: default
+spec:
+  interval: 5m0s
+  url: https://github.com/jgeissler14/google
