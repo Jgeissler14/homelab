@@ -14,19 +14,21 @@ metadata:
 spec:
   url: https://github.com/jgeissler14/google/helm
 ---
-apiVersion: helm.toolkit.fluxcd.io/v2beta1
+apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
   name: google-release
   namespace: google
 spec:
-  interval: 5m
+  releaseName: podinfo
   chart:
     spec:
-      chart: helm # Assuming the chart is in the 'google' directory of the repository
+      chart: helm
       sourceRef:
         kind: HelmRepository
         name: google-repo
         namespace: google
-  values:
-    # Add your Helm values here
+  interval: 20m # change to 1m for testing
+  install:
+    remediation:
+      retries: 3
