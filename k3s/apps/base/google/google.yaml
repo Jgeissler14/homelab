@@ -6,7 +6,6 @@ metadata:
   labels:
     toolkit.fluxcd.io/tenant: sre-team
 ---
----
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:
