@@ -34,3 +34,5 @@ spec:
   values:
     image:
       tag: latest
+    service:
+      type: NodePort
