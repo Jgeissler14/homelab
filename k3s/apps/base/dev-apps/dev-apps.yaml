@@ -10,7 +10,7 @@ apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
   name: cloudzap
-  namespace: cloudzap
+  namespace: development
 spec:
   interval: 1m
   url: https://github.com/jgeissler14/open-react-site
@@ -21,7 +21,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: cloudzap
-  namespace: cloudzap
+  namespace: development
 spec:
   interval: 1m
   releaseName: cloudzap
