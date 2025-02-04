@@ -27,7 +27,7 @@ spec:
   releaseName: cloudzap
   chart:
     spec:
-      chart: helm/cloudzap
+      chart: helm
       sourceRef:
         kind: GitRepository
         name: cloudzap
