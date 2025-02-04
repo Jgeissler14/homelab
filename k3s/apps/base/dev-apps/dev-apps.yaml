@@ -35,6 +35,8 @@ spec:
     image:
       tag: latest
       pullPolicy: IfNotPresent
+    service:
+      type: LoadBalancer
     resources:
       requests:
         cpu: 100m
