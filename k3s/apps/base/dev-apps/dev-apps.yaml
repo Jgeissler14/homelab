@@ -55,7 +55,7 @@ spec:
     kind: Deployment
     name: cloudzap-helm-cloudzap
   minReplicas: 2
-  maxReplicas: 20
+  maxReplicas: 100
   metrics:
   - type: Resource
     resource:
