@@ -20,6 +20,17 @@ github_username: <username>
 github_repo: <repository>
 
 ### Packer
+add a locals.pkr.var file with the following
+```
+locals {
+    proxmox_url      = "https://pve.example.com:8006/api2/json"
+    proxmox_username = "user@pve"
+    proxmox_password = "password"
+}
+```
+
+then
+
 ```
 cd packer
 packer init .

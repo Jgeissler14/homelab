@@ -64,14 +64,3 @@ resource "proxmox_vm_qemu" "core" {
     ]
   }
 }
-
-# module "azure_vm" {
-#   source = "./modules/azure_vm"
-#   prefix = "homelab"
-
-#   enable_vm      = var.enable_vm
-#   computer_name  = var.computer_name
-#   admin_username = var.admin_username
-#   admin_password = var.admin_password
-#   tags           = local.tags
-# }
