@@ -12,9 +12,8 @@ source "proxmox" "ubuntu" {
     "c<wait>",
     "linux /casper/vmlinuz --- only-ubiquity autoinstall net.ifnames=0 biosdevname=0 ip=dhcp ipv6.disable=1 ds=\"nocloud-net;seedfrom=http://{{.HTTPIP}}:{{.HTTPPort}}/\"", // IPv6 disabled to fix hang: https://answers.launchpad.net/ubuntu/+source/ubiquity/+question/698383
     "<enter><wait>",
-    "initrd /casper/", // This is weird, but for some reason my proxmox/packer runs will ignore anything after '/casper/'
-    "<enter><wait>",   //  so we throw in another enter/wait before typing in just 'initrd'
-    "initrd<enter><wait>",
+    "initrd /casper/initrd",
+    "<enter><wait>",
     "boot",
     "<enter>"
   ]
