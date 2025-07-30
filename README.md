@@ -24,7 +24,7 @@ add a locals.pkr.var file with the following
 ```
 locals {
     proxmox_url      = "https://pve.example.com:8006/api2/json"
-    proxmox_username = "user@pve"
+    proxmox_username = "user@pam"
     proxmox_password = "password"
 }
 ```

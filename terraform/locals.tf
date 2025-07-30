@@ -1,5 +1,6 @@
 locals {
   vms      = yamldecode(file("./external/vms.yml"))
+  networks = yamldecode(file("./external/network.yml"))
 
   tags = {
     environment = "homelab"
