@@ -85,6 +85,17 @@ spec:
             enabled: true
       #nodeSelector:
         #workload: monitor
+      ingress:
+        enabled: true
+        ingressClassName: nginx
+        annotations:
+          external-dns.alpha.kubernetes.io/hostname: grafana.joshgeissler.com
+        hosts:
+          - grafana.joshgeissler.com
+        tls:
+          - secretName: grafana-tls
+            hosts:
+              - grafana.joshgeissler.com
     alertmanager:
       enabled: true
       #alertManagerSpec:
