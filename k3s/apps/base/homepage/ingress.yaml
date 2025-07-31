@@ -25,7 +25,7 @@ spec:
                 name: homepage
                 port:
                   number: 3000
-  # tls:
-  #   - hosts:
-  #       - homepage.joshgeissler.com
-  #     secretName: homepage-ingress-production
+  tls:
+    - hosts:
+        - homepage.joshgeissler.com
+      secretName: homepage-ingress-production
