@@ -57,3 +57,6 @@ sudo cat /etc/rancher/k3s/k3s.yaml
 
 Copy the kube config into ~/.kube/config
 
+### Flux
+flux reconcile source git flux-system
+flux reconcile kustomization flux-system
