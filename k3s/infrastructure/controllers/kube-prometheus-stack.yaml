@@ -83,6 +83,8 @@ spec:
       sidecar:
           dashboards:
             enabled: true
+      annotations:
+        ovn.kubernetes.io/logical_switch: macvlan-subnet
       #nodeSelector:
         #workload: monitor
       ingress:

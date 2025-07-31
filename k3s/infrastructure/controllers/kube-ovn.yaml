@@ -1,0 +1,31 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: kube-ovn
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: HelmRepository
+metadata:
+  name: kube-ovn
+  namespace: kube-ovn
+spec:
+  interval: 24h
+  url: https://kubeovn.github.io/helm-charts
+---
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: kube-ovn
+  namespace: kube-ovn
+spec:
+  interval: 30m
+  chart:
+    spec:
+      chart: kube-ovn
+      version: "*"
+      sourceRef:
+        kind: HelmRepository
+        name: kube-ovn
+        namespace: kube-ovn
+      interval: 12h
