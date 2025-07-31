@@ -4,7 +4,6 @@ metadata:
   name: homepage
   labels:
     app.kubernetes.io/name: homepage
-    try: "1"
 spec:
   revisionHistoryLimit: 3
   replicas: 1
