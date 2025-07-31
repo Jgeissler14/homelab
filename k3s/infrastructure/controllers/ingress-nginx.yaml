@@ -34,6 +34,6 @@ spec:
   values:
     controller:
       service:
-        type: "ClusterIP"
+        enabled: false
     admissionWebhooks:
       enabled: false
