@@ -13,11 +13,4 @@ spec:
       name: letsencrypt-nginx
     solvers:
       - dns01:
-          route53:
-            region: us-east-1 # Replace with your AWS region
-            accessKeyIDSecretRef:
-              name: cert-manager
-              key: access-key-id
-            secretAccessKeySecretRef:
-              name: cert-manager
-              key: secret-access-key
+          route53: {}
