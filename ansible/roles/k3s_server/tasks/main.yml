@@ -124,6 +124,8 @@
       ansible.builtin.pause:
         seconds: 10
 
+    
+
     - name: Check whether kubectl is installed on control node
       ansible.builtin.command: 'kubectl'
       register: kubectl_installed
@@ -252,6 +254,8 @@
         name: k3s
         daemon_reload: true
         state: restarted
+      notify:
+        - restart k3s-agent
 
     - name: Enable and check K3s service
       when: ansible_facts.services['k3s.service'] is not defined or ansible_facts.services['k3s.service'].state != 'running'
