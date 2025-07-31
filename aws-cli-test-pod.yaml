@@ -1,0 +1,27 @@
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: aws-cli-test
+  namespace: cert-manager # Ensure this matches the namespace of your cert-manager secret
+spec:
+  restartPolicy: Never
+  containers:
+  - name: aws-cli
+    image: amazon/aws-cli:latest
+    command: ["/bin/sh", "-c"]
+    args:
+      - |
+        mkdir -p /root/.aws/
+        echo "[default]" > /root/.aws/credentials
+        echo "aws_access_key_id = $(cat /etc/aws/credentials/access-key-id)" >> /root/.aws/credentials
+        echo "aws_secret_access_key = $(cat /etc/aws/credentials/secret-access-key)" >> /root/.aws/credentials
+        aws sts get-caller-identity
+    volumeMounts:
+    - name: aws-credentials-volume
+      mountPath: /etc/aws/credentials
+      readOnly: true
+  volumes:
+  - name: aws-credentials-volume
+    secret:
+      secretName: cert-manager # Ensure this matches the name of your cert-manager secret

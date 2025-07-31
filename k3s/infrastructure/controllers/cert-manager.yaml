@@ -45,3 +45,5 @@ spec:
       env:
         - name: AWS_SHARED_CREDENTIALS_FILE
           value: /etc/aws/credentials/credentials
+
+   
