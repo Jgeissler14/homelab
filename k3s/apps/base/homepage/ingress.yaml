@@ -13,7 +13,7 @@ metadata:
     gethomepage.dev/icon: homepage.png
     gethomepage.dev/name: Homepage
 spec:
-
+  ingressClassName: nginx
   rules:
     - host: homepage.joshgeissler.com
       http:
