@@ -58,6 +58,8 @@ sudo cat /etc/rancher/k3s/k3s.yaml
 Copy the kube config into ~/.kube/config
 
 kubectl create secret generic external-dns --from-file=credentials=/Users/joshuageissler/.aws/credentials --namespace=external-dns
+kubectl create secret generic cert-manager --from-file=credentials=/Users/joshuageissler/.aws/credentials --namespace=cert-manager
+
 ### Flux
 flux reconcile source git flux-system
 flux reconcile kustomization flux-system
