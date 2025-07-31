@@ -8,3 +8,4 @@ resources:
   - backstage.yaml
   - external-dns
   - kube-ovn.yaml
+  - metallb.yaml
