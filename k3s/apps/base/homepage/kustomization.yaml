@@ -8,7 +8,6 @@ resources:
   - service.yaml
   - ingress.yaml
   - configmap-env.yaml
-  - secret.yaml
   - deployment.yaml
   - clusterrole.yaml
 
