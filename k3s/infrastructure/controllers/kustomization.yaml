@@ -6,4 +6,4 @@ resources:
   - kube-prometheus-stack.yaml
   # - cloudnative-pg.yaml
   - backstage.yaml
-  - external-dns.yaml
+  - external-dns/kustomization.yaml
