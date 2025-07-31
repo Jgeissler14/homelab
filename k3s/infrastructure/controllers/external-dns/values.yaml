@@ -1,6 +1,9 @@
 provider:
   name: aws
 
+source:
+  - ingress
+
 policy: upsert-only
 
 env:
