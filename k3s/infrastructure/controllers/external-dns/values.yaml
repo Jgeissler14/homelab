@@ -3,6 +3,7 @@ provider:
 
 source:
   - ingress
+  - service
 
 policy: upsert-only
 
@@ -17,6 +18,8 @@ extraVolumeMounts:
   - name: aws-credentials
     mountPath: /etc/aws/credentials
     readOnly: true
+extraArgs:
+  - --node-hostname
 
 # Note: Ensure you have created the secret with your AWS credentials before applying this configuration.
 # Example command to create the secret:
