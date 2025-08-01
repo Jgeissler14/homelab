@@ -34,6 +34,6 @@ spec:
   values:
     controller:
       service:
-        enabled: false
+        type: NodePort
     admissionWebhooks:
       enabled: false
