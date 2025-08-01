@@ -13,6 +13,7 @@ spec:
         name: external-dns
         namespace: external-dns
 
+  timeout: 5m
   valuesFrom:
     - kind: ConfigMap
       name: external-dns-values
