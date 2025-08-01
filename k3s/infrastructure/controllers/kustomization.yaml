@@ -9,5 +9,6 @@ resources:
   - external-dns
   
   - metallb.yaml
+  - metallb-l2.yaml
   
   
