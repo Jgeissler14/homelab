@@ -35,6 +35,8 @@ spec:
     controller:
       logLevel: info
     speaker:
+      frr:
+        enabled: false
       logLevel: info
     ipAddressPools:
       - name: default
