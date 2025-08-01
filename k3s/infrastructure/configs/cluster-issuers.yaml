@@ -13,4 +13,11 @@ spec:
       name: letsencrypt-nginx
     solvers:
       - dns01:
-          route53: {}
+          route53: 
+            region: us-east-1
+            accessKeyID: AKIAUFDDY6RZ52BKMRFQ
+            secretAccessKeySecretRef:
+              name: route53-credentials
+              key: secret-access-key
+
+              
