@@ -83,8 +83,6 @@ spec:
       sidecar:
           dashboards:
             enabled: true
-      annotations:
-        ovn.kubernetes.io/logical_switch: macvlan-subnet
       #nodeSelector:
         #workload: monitor
       ingress:
@@ -92,12 +90,15 @@ spec:
         ingressClassName: nginx
         annotations:
           external-dns.alpha.kubernetes.io/hostname: grafana.joshgeissler.com
+          cert-manager.io/cluster-issuer: letsencrypt
         hosts:
           - grafana.joshgeissler.com
         tls:
           - secretName: grafana-tls
             hosts:
               - grafana.joshgeissler.com
+
+              
     alertmanager:
       enabled: true
       #alertManagerSpec:
