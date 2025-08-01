@@ -8,4 +8,4 @@ resources:
   - backstage.yaml
   - external-dns
   
-  - metallb.yaml
+  
