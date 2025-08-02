@@ -5,7 +5,6 @@ resources:
   - ingress-nginx.yaml
   - kube-prometheus-stack.yaml
   # - cloudnative-pg.yaml
-  - backstage.yaml
   - external-dns
   
   - metallb.yaml

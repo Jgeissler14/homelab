@@ -1,0 +1,32 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: backstage
+  labels:
+    app.kubernetes.io/name: backstage
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: backstage.joshgeissler.com
+    cert-manager.io/cluster-issuer: letsencrypt
+    
+    getbackstage.dev/description: Dynamically Detected backstage
+    getbackstage.dev/enabled: "true"
+    getbackstage.dev/group: Cluster Management
+    getbackstage.dev/icon: backstage.png
+    getbackstage.dev/name: backstage
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: backstage.joshgeissler.com
+      http:
+        paths:
+          - path: "/"
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: backstage
+                port:
+                  number: 7007
+  tls:
+    - hosts:
+        - backstage.joshgeissler.com
+      secretName: backstage-ingress
