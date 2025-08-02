@@ -1,4 +1,3 @@
----
 apiVersion: v1
 kind: Namespace
 metadata:
@@ -10,7 +9,6 @@ apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:
   name: backstage
-  namespace: backstage
 spec:
   interval: 24h
   url: https://backstage.github.io/charts
@@ -19,7 +17,6 @@ apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
   name: backstage
-  namespace: backstage
 spec:
   interval: 30m
   chart:
@@ -29,14 +26,12 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: backstage
-        namespace: backstage
       interval: 12h
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: backstage
-  namespace: backstage
   labels:
     app.kubernetes.io/name: backstage
   annotations:
