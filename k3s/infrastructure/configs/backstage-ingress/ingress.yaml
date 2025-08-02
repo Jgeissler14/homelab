@@ -2,17 +2,12 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: backstage
+  namespace: backstage
   labels:
     app.kubernetes.io/name: backstage
   annotations:
     external-dns.alpha.kubernetes.io/hostname: backstage.joshgeissler.com
     cert-manager.io/cluster-issuer: letsencrypt
-    
-    getbackstage.dev/description: Dynamically Detected backstage
-    getbackstage.dev/enabled: "true"
-    getbackstage.dev/group: Cluster Management
-    getbackstage.dev/icon: backstage.png
-    getbackstage.dev/name: backstage
 spec:
   ingressClassName: nginx
   rules:
