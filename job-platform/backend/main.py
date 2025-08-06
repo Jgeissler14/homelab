@@ -1,0 +1,74 @@
+from fastapi import FastAPI, HTTPException, APIRouter
+from jinja2 import Environment, FileSystemLoader
+from kubernetes import client, config
+from pydantic import BaseModel
+from watchers import start_job_watcher
+import yaml
+import uuid
+
+app = FastAPI()
+api = APIRouter(prefix="/api")
+
+# Jinja environment for templates
+env = Environment(loader=FileSystemLoader("templates"))
+
+# Initialize Kubernetes client
+try:
+    config.load_incluster_config()
+except Exception:
+    config.load_kube_config()
+
+batch_api = client.BatchV1Api()
+
+jobs = {}
+
+
+@api.get("/jobs")
+def list_jobs():
+    return {"templates": ["my-job"]}
+
+
+class JobRequest(BaseModel):
+    template: str
+    params: dict
+
+
+@api.post("/jobs/run")
+def run_job(req: JobRequest):
+    if req.template != "my-job":
+        raise HTTPException(status_code=404, detail="template not found")
+    template = env.get_template(f"{req.template}.yaml.j2")
+    job_name = f"{req.template}-{uuid.uuid4().hex[:6]}"
+    rendered = template.render(job_name=job_name, params=req.params)
+
+    # Deserialize YAML to dict and submit as Job
+    body = yaml.safe_load(rendered)
+    batch_api.create_namespaced_job(namespace="default", body=body)
+
+    # Start watcher thread for this job
+    jobs[job_name] = {"status": "submitted"}
+    start_job_watcher(job_name, namespace="default", store=jobs)
+
+    return {"job_name": job_name}
+
+
+@api.get("/jobs/{job_name}/status")
+def job_status(job_name: str):
+    return jobs.get(job_name, {"status": "unknown"})
+
+
+@api.get("/jobs/{job_name}/logs")
+def job_logs(job_name: str):
+    core_api = client.CoreV1Api()
+    pods = core_api.list_namespaced_pod(
+        namespace="default", label_selector=f"job-name={job_name}"
+    )
+    if not pods.items:
+        raise HTTPException(status_code=404, detail="pod not found")
+    pod_name = pods.items[0].metadata.name
+    log = core_api.read_namespaced_pod_log(name=pod_name, namespace="default")
+    return {"log": log}
+
+
+app.include_router(api)
+
