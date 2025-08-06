@@ -17,6 +17,8 @@ spec:
         image: ghcr.io/jgeissler14/homelab/backend:latest
         ports:
         - containerPort: 8000
+      imagepullPolicy: Always
+
 ---
 apiVersion: v1
 kind: Service

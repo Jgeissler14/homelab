@@ -15,9 +15,10 @@ spec:
       containers:
       - name: frontend
         image: ghcr.io/jgeissler14/homelab/frontend:latest
-        imagepullPolicy: Always
         ports:
         - containerPort: 80
+      imagepullPolicy: Always
+
 ---
 apiVersion: v1
 kind: Service
