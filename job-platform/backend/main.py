@@ -25,7 +25,7 @@ jobs = {}
 
 @api.get("/jobs")
 def list_jobs():
-    return {"templates": ["my-job"]}
+    return {"templates": ["default-job"]}
 
 
 class JobRequest(BaseModel):
@@ -35,7 +35,7 @@ class JobRequest(BaseModel):
 
 @api.post("/jobs/run")
 def run_job(req: JobRequest):
-    if req.template != "my-job":
+    if req.template != "default-job":
         raise HTTPException(status_code=404, detail="template not found")
     template = env.get_template(f"{req.template}.yaml.j2")
     job_name = f"{req.template}-{uuid.uuid4().hex[:6]}"
