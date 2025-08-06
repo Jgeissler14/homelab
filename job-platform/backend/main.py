@@ -39,6 +39,7 @@ def run_job(req: JobRequest):
         raise HTTPException(status_code=404, detail="template not found")
     template = env.get_template(f"{req.template}.yaml.j2")
     job_name = f"{req.template}-{uuid.uuid4().hex[:6]}"
+    print(f"DEBUG: req.params = {req.params}")
     rendered = template.render(job_name=job_name, params=req.params)
 
     # Deserialize YAML to dict and submit as Job
