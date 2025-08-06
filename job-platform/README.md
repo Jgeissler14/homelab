@@ -47,3 +47,8 @@ Manifests under `deploy/` create Deployments, Services, and an Ingress. Update i
 ```bash
 kubectl apply -f deploy/
 ```
+
+## FluxCD Deployment
+
+Flux manifests live under `k3s/apps/base/job-platform`. Add `../base/job-platform` to your environment's `kustomization.yaml` (e.g., `k3s/apps/production/kustomization.yaml`) so FluxCD can reconcile and deploy the frontend, backend, and ingress.
+

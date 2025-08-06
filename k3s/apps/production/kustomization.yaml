@@ -5,3 +5,4 @@ resources:
   # - ../base/dev-apps
   # - ../base/backstage
   - ../base/homepage
+  - ../base/job-platform
