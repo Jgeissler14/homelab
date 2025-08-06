@@ -24,7 +24,7 @@ export const jobs = [
   },
   {
     id: 'fraud-detection',
-    name: 'Fraud Detection Inference',
+    name: 'Fraud Detection',
     description: 'A job that runs a fraud detection inference model.',
     template: 'default-job',
     params: {
