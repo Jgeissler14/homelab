@@ -9,10 +9,12 @@ spec:
       - name: {{ params.container_name }}
         image: {{ params.image }}
         command: {{ params.command }}
+{% if params.env is defined and params.env %}
         env:
 {% for key, value in params.env.items() %}
         - name: {{ key }}
           value: {{ value }}
 {% endfor %}
+{% endif %}
       restartPolicy: Never
   backoffLimit: 0
