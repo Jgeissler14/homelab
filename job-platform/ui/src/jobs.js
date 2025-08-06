@@ -30,7 +30,7 @@ export const jobs = [
     params: {
       container_name: 'busybox',
       image: 'busybox:latest',
-      command: 'echo "Hello, from Busybox!"',
+      command: ['echo', '"Hello, from Busybox!"'],
     },
   },
 ];
