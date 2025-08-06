@@ -23,14 +23,14 @@ export const jobs = [
     },
   },
   {
-    id: 'text-generation-inference',
-    name: 'Text Generation Inference',
-    description: 'A job that runs a text generation inference model.',
+    id: 'fraud-detection',
+    name: 'Fraud Detection Inference',
+    description: 'A job that runs a fraud detection inference model.',
     template: 'default-job',
     params: {
-      container_name: 'text-generation-inference',
-      image: 'ghcr.io/huggingface/text-generation-inference:sha-9f38d93-trtllm',
-      command: [ "--json-output" ]
+      container_name: 'fraud-detection',
+      image: 'tomsriddle/fraud-detection:1.0',
+      command: [ "fraud_service.py" ]
     },
   },
 ];
