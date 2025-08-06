@@ -6,3 +6,5 @@ resources:
   - backend.yaml
   - frontend.yaml
   - ingress.yaml
+  - job-creator-role.yaml
+  - job-creator-rolebinding.yaml
