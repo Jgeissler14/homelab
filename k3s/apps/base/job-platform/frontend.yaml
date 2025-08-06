@@ -17,7 +17,7 @@ spec:
         image: ghcr.io/jgeissler14/homelab/frontend:latest
         ports:
         - containerPort: 80
-      imagepullPolicy: Always
+        imagePullPolicy: Always
 
 ---
 apiVersion: v1
