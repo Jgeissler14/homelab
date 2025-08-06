@@ -8,7 +8,7 @@ export const jobs = [
     params: {
       container_name: 'ubuntu',
       image: 'ubuntu:latest',
-      command: 'sleep 30',
+      command: ['sleep', '30'],
     },
   },
   {
@@ -19,7 +19,7 @@ export const jobs = [
     params: {
       container_name: 'alpine',
       image: 'alpine:latest',
-      command: 'wget -q -O - https://example.com',
+      command: ['wget', '-q', '-O', '-', 'https://example.com'],
     },
   },
   {
