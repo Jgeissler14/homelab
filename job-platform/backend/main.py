@@ -57,14 +57,14 @@ def job_status(job_name: str):
     try:
         job = batch_api.read_namespaced_job(name=job_name, namespace="job-platform")
         if job.status.succeeded:
-            return {"status": "succeeded"}
+            return {"status": "Succeeded"}
         elif job.status.failed:
-            return {"status": "failed"}
+            return {"status": "Failed"}
         else:
-            return {"status": "running"}
+            return {"status": "Running"}
     except client.ApiException as e:
         if e.status == 404:
-            return {"status": "not found"}
+            return {"status": "Not Found"}
         raise HTTPException(status_code=e.status, detail=e.reason)
 
 
@@ -75,7 +75,7 @@ def job_logs(job_name: str):
         namespace="job-platform", label_selector=f"job-name={job_name}"
     )
     if not pods.items:
-        raise HTTPException(status_code=404, detail="pod not found")
+        raise HTTPException(status_code=200, detail="pod not found")
     pod_name = pods.items[0].metadata.name
     log = core_api.read_namespaced_pod_log(name=pod_name, namespace="job-platform")
     return {"log": log}

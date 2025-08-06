@@ -67,7 +67,7 @@ function App() {
       try {
         const res = await axios.get(`/api/jobs/${jobName}/status`);
         setStatus(res.data.status);
-        if (res.data.status === 'succeeded' || res.data.status === 'failed') {
+        if (res.data.status === 'Succeeded' || res.data.status === 'Failed') {
           clearInterval(interval);
           setLoading(false);
           const logRes = await axios.get(`/api/jobs/${jobName}/logs`);
