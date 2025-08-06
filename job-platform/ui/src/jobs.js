@@ -21,16 +21,5 @@ export const jobs = [
       image: 'alpine:latest',
       command: ['wget', '-q', '-O', '-', 'https://example.com'],
     },
-  },
-  {
-    id: 'busybox-echo',
-    name: 'Busybox Echo',
-    description: 'A simple job that echoes a message.',
-    template: 'my-job',
-    params: {
-      container_name: 'busybox',
-      image: 'busybox:latest',
-      command: ['echo', '"Hello, from Busybox!"'],
-    },
-  },
+  }
 ];
