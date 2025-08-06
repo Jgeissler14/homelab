@@ -9,7 +9,10 @@ spec:
       containers:
       - name: {{ params.container_name }}
         image: {{ params.image }}
-        command: [{{ params.command | join(', ') }}]
+        command:
+{% for item in params.command %}
+        - {{ item }}
+{% endfor %}
 {% if params.env is defined and params.env %}
         env:
 {% for key, value in params.env.items() %}
