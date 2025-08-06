@@ -43,11 +43,11 @@ def run_job(req: JobRequest):
 
     # Deserialize YAML to dict and submit as Job
     body = yaml.safe_load(rendered)
-    batch_api.create_namespaced_job(namespace="default", body=body)
+    batch_api.create_namespaced_job(namespace="job-platform", body=body)
 
     # Start watcher thread for this job
     jobs[job_name] = {"status": "submitted"}
-    start_job_watcher(job_name, namespace="default", store=jobs)
+    start_job_watcher(job_name, namespace="job-platform", store=jobs)
 
     return {"job_name": job_name}
 
@@ -61,12 +61,12 @@ def job_status(job_name: str):
 def job_logs(job_name: str):
     core_api = client.CoreV1Api()
     pods = core_api.list_namespaced_pod(
-        namespace="default", label_selector=f"job-name={job_name}"
+        namespace="job-platform", label_selector=f"job-name={job_name}"
     )
     if not pods.items:
         raise HTTPException(status_code=404, detail="pod not found")
     pod_name = pods.items[0].metadata.name
-    log = core_api.read_namespaced_pod_log(name=pod_name, namespace="default")
+    log = core_api.read_namespaced_pod_log(name=pod_name, namespace="job-platform")
     return {"log": log}
 
 

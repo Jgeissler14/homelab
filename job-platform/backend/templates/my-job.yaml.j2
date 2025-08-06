@@ -2,6 +2,7 @@ apiVersion: batch/v1
 kind: Job
 metadata:
   name: {{ job_name }}
+  namespace: job-platform
 spec:
   template:
     spec:
