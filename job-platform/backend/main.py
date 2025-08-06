@@ -39,7 +39,6 @@ def run_job(req: JobRequest):
         raise HTTPException(status_code=404, detail="template not found")
     template = env.get_template(f"{req.template}.yaml.j2")
     job_name = f"{req.template}-{uuid.uuid4().hex[:6]}"
-    print(f"DEBUG: req.params = {req.params}")
     rendered = template.render(job_name=job_name, params=req.params)
 
     # Deserialize YAML to dict and submit as Job
@@ -55,7 +54,18 @@ def run_job(req: JobRequest):
 
 @api.get("/jobs/{job_name}/status")
 def job_status(job_name: str):
-    return jobs.get(job_name, {"status": "unknown"})
+    try:
+        job = batch_api.read_namespaced_job(name=job_name, namespace="job-platform")
+        if job.status.succeeded:
+            return {"status": "succeeded"}
+        elif job.status.failed:
+            return {"status": "failed"}
+        else:
+            return {"status": "running"}
+    except client.ApiException as e:
+        if e.status == 404:
+            return {"status": "not found"}
+        raise HTTPException(status_code=e.status, detail=e.reason)
 
 
 @api.get("/jobs/{job_name}/logs")
