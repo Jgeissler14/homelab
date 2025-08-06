@@ -21,16 +21,5 @@ export const jobs = [
       image: 'alpine:latest',
       command: ['wget', '-q', '-O', '-', 'https://example.com'],
     },
-  },
-  {
-    id: 'fraud-detection',
-    name: 'Fraud Detection',
-    description: 'A job that runs a fraud detection inference model.',
-    template: 'default-job',
-    params: {
-      container_name: 'fraud-detection',
-      image: 'tomsriddle/fraud-detection:1.0',
-      command: [ "fraud_service.py" ]
-    },
-  },
+  }
 ];
