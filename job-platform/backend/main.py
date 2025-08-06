@@ -75,7 +75,7 @@ def job_logs(job_name: str):
         namespace="job-platform", label_selector=f"job-name={job_name}"
     )
     if not pods.items:
-        raise HTTPException(status_code=200, detail="pod not found")
+        raise HTTPException(status_code=404, detail="pod not found")
     pod_name = pods.items[0].metadata.name
     log = core_api.read_namespaced_pod_log(name=pod_name, namespace="job-platform")
     return {"log": log}
