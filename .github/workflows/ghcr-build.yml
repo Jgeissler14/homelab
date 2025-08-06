@@ -41,4 +41,4 @@ jobs:
           context: ${{ matrix.context }}
           file: ${{ matrix.dockerfile }}
           push: true
-          tags: ghcr.io/${{ github.repository }}/${{ matrix.image }}:latest,ghcr.io/${{ github.repository }}/${{ matrix.image }}:${{ github.sha }}
+          tags: ghcr.io/jgeissler14/homelab/${{ matrix.image }}:latest,ghcr.io/jgeissler14/homelab/${{ matrix.image }}:${{ github.sha }}
