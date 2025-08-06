@@ -44,13 +44,6 @@ docker push ghcr.io/jgeissler14/homelab/frontend:latest
 
 Container images for the frontend and backend are built automatically and published to GitHub Container Registry on pushes to `main`. The workflow definition lives at `.github/workflows/ghcr-build.yml`.
 
-## Deploying to Kubernetes
-
-Manifests under `deploy/` create Deployments, Services, and an Ingress. Update image references and hostnames, then apply:
-
-```bash
-kubectl apply -f deploy/
-```
 
 ## FluxCD Deployment
 
