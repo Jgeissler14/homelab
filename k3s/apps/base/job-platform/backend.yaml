@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: YOUR_REGISTRY/job-platform-backend:latest
+        image: ghcr.io/jgeissler14/homelab/backend:latest
         ports:
         - containerPort: 8000
 ---

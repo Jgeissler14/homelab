@@ -34,10 +34,10 @@ Example Dockerfiles are provided for the frontend and backend. Build and push im
 
 ```bash
 # from job-platform/
-docker build -t YOUR_REGISTRY/job-platform-backend:latest backend/
-docker build -t YOUR_REGISTRY/job-platform-frontend:latest ui/
-docker push YOUR_REGISTRY/job-platform-backend:latest
-docker push YOUR_REGISTRY/job-platform-frontend:latest
+docker build -t ghcr.io/jgeissler14/homelab/backend:latest backend/
+docker build -t ghcr.io/jgeissler14/homelab/frontend:latest ui/
+docker push ghcr.io/jgeissler14/homelab/backend:latest
+docker push ghcr.io/jgeissler14/homelab/frontend:latest
 ```
 
 ### GitHub Actions

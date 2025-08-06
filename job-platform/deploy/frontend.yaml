@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: YOUR_REGISTRY/job-platform-frontend:latest
+        image: ghcr.io/jgeissler14/homelab/frontend:latest
         ports:
         - containerPort: 80
 ---
