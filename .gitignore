@@ -9,3 +9,5 @@ ansible/inventory/inventories.ini
 *.pem
 terraform*.log
 **local**
+node_modules/
+dist/

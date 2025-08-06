@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: job-platform-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: job-platform-backend
+  template:
+    metadata:
+      labels:
+        app: job-platform-backend
+    spec:
+      containers:
+      - name: backend
+        image: YOUR_REGISTRY/job-platform-backend:latest
+        ports:
+        - containerPort: 8000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: job-platform-backend
+spec:
+  selector:
+    app: job-platform-backend
+  ports:
+  - port: 80
+    targetPort: 8000
