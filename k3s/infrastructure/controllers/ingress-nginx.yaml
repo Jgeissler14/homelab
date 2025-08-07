@@ -35,9 +35,18 @@ spec:
     controller:
       service:
         type: LoadBalancer
-      containerPort:
-        http: 80
-        https: 443  
-        postgres: 5432
+        ports:
+          - name: http
+            port: 80
+            targetPort: 80
+            protocol: TCP
+          - name: https
+            port: 443
+            targetPort: 443
+            protocol: TCP
+          - name: postgres
+            port: 5432
+            targetPort: 5432
+            protocol: TCP
     admissionWebhooks:
       enabled: false
