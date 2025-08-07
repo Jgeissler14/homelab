@@ -38,15 +38,8 @@ spec:
         ports:
           http: 80
           https: 443
-          postgres: 5432
-      targetPorts:
-        http: 80
-        https: 443
-        postgres: 5432
-      containerPort:
-        http: 80
-        https: 443
-        postgres: 5432
+      tcp:
+        "5432": "cnpg-cluster/home-cluster-rw:5432"
     admissionWebhooks:
       enabled: false
 ---
