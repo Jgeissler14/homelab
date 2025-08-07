@@ -27,6 +27,25 @@ spec:
         kind: HelmRepository
         name: backstage
       interval: 12h
+  values:
+    backend:
+      livenessProbe:
+        initialDelaySeconds: 60
+        periodSeconds: 10
+        timeoutSeconds: 5
+        failureThreshold: 6
+      readinessProbe:
+        initialDelaySeconds: 30
+        periodSeconds: 10
+        timeoutSeconds: 5
+        failureThreshold: 6
+      resources:
+        requests:
+          cpu: 200m
+          memory: 512Mi
+        limits:
+          cpu: 1000m
+          memory: 1024Mi
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
