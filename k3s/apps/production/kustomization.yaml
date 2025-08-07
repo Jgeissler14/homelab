@@ -3,6 +3,6 @@ kind: Kustomization
 resources:
   # - ../base/cnpg-cluster
   # - ../base/dev-apps
-  # - ../base/backstage
+  - ../base/backstage
   - ../base/homepage
   - ../base/job-platform
