@@ -5,13 +5,8 @@ metadata:
   namespace: cnpg-cluster
   annotations:
     external-dns.alpha.kubernetes.io/hostname: cnpg-rw.joshgeissler.com
-    cert-manager.io/cluster-issuer: letsencrypt
 spec:
-  ingressClassName: nginx
-  tls:
-    - hosts:
-        - cnpg-rw.joshgeissler.com
-      secretName: cnpg-rw-tls
+  ingressClassName: metallb
   rules:
     - host: cnpg-rw.joshgeissler.com
       http:

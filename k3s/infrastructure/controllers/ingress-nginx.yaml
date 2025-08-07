@@ -35,5 +35,9 @@ spec:
     controller:
       service:
         type: LoadBalancer
+      containerPort:
+        http: 80
+        https: 443  
+        postgres: 5432
     admissionWebhooks:
       enabled: false
