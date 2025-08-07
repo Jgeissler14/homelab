@@ -60,9 +60,12 @@ Copy the kube config into ~/.kube/config
 kubectl create secret generic external-dns --from-file=credentials=/Users/joshuageissler/.aws/credentials --namespace=external-dns
 kubectl --namespace cert-manager create secret generic route53-credentials --from-literal="secret-access-key=key secret here"
 
+# Oauth secret
+Run the python command to generate a unique value then insert for cookie secret
 kubectl create secret generic oauth2-proxy-secret \
     --from-literal=client-id=<your-client-id> \
     --from-literal=client-secret=<your-client-secret> \
+    --from-literal=cookie-secret=<python -c 'import os,base64; print(base64.b64encode(os.urandom(16)).decode("ascii"))'> / 
     -n job-platform
 ### Flux
 flux reconcile source git flux-system
