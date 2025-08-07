@@ -1,0 +1,23 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: job-template-reader
+  namespace: job-platform
+rules:
+- apiGroups: [""]
+  resources: ["configmaps"]
+  verbs: ["get", "list", "watch"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: job-template-reader-binding
+  namespace: job-platform
+subjects:
+- kind: ServiceAccount
+  name: job-platform-backend-sa
+  namespace: job-platform
+roleRef:
+  kind: Role
+  name: job-template-reader
+  apiGroup: rbac.authorization.k8s.io

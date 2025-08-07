@@ -5,6 +5,7 @@ from pydantic import BaseModel
 from watchers import start_job_watcher
 import yaml
 import uuid
+import os
 
 app = FastAPI()
 api = APIRouter(prefix="/api")
@@ -19,26 +20,41 @@ except Exception:
     config.load_kube_config()
 
 batch_api = client.BatchV1Api()
+core_api = client.CoreV1Api()
 
 jobs = {}
+job_templates = {}
+
+# Load job templates from ConfigMap
+JOB_TEMPLATES_PATH = "/app/job-templates"
+if os.path.exists(JOB_TEMPLATES_PATH):
+    for filename in os.listdir(JOB_TEMPLATES_PATH):
+        if filename.endswith(".yaml"):
+            filepath = os.path.join(JOB_TEMPLATES_PATH, filename)
+            with open(filepath, "r") as f:
+                template_data = yaml.safe_load(f)
+                job_templates[template_data["id"]] = template_data
 
 
 @api.get("/jobs")
 def list_jobs():
-    return {"templates": ["default-job"]}
+    return {"templates": list(job_templates.values())}
 
 
 class JobRequest(BaseModel):
-    template: str
+    template_id: str
     params: dict
 
 
 @api.post("/jobs/run")
 def run_job(req: JobRequest):
-    if req.template != "default-job":
+    template_data = job_templates.get(req.template_id)
+    if not template_data:
         raise HTTPException(status_code=404, detail="template not found")
-    template = env.get_template(f"{req.template}.yaml.j2")
-    job_name = f"{req.template}-{uuid.uuid4().hex[:6]}"
+
+    template_name = template_data.get("template", "default-job")
+    template = env.get_template(f"{template_name}.yaml.j2")
+    job_name = f"{req.template_id}-{uuid.uuid4().hex[:6]}"
     rendered = template.render(job_name=job_name, params=req.params)
 
     # Deserialize YAML to dict and submit as Job
@@ -70,7 +86,6 @@ def job_status(job_name: str):
 
 @api.get("/jobs/{job_name}/logs")
 def job_logs(job_name: str):
-    core_api = client.CoreV1Api()
     pods = core_api.list_namespaced_pod(
         namespace="job-platform", label_selector=f"job-name={job_name}"
     )

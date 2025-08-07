@@ -59,6 +59,11 @@ Copy the kube config into ~/.kube/config
 
 kubectl create secret generic external-dns --from-file=credentials=/Users/joshuageissler/.aws/credentials --namespace=external-dns
 kubectl --namespace cert-manager create secret generic route53-credentials --from-literal="secret-access-key=key secret here"
+
+kubectl create secret generic oauth2-proxy-secret \
+    --from-literal=client-id=<your-client-id> \
+    --from-literal=client-secret=<your-client-secret> \
+    -n job-platform
 ### Flux
 flux reconcile source git flux-system
 flux reconcile kustomization flux-system

@@ -8,3 +8,6 @@ resources:
   - ingress.yaml
   - job-creator-role.yaml
   - job-creator-rolebinding.yaml
+  - job-templates-configmap.yaml
+  - serviceaccount.yaml
+  - rbac.yaml
