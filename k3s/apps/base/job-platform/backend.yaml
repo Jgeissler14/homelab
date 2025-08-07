@@ -12,6 +12,7 @@ spec:
       labels:
         app: job-platform-backend
     spec:
+      serviceAccountName: default
       containers:
       - name: backend
         image: ghcr.io/jgeissler14/homelab/backend:latest
