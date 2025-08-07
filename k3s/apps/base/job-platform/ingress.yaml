@@ -82,7 +82,7 @@ spec:
         - --provider=github
         - --upstream=file:///dev/null
         - --email-domain=*
-        - --http-address=0.0.0.0:4180
+        - --http-address=:4180
         # Register a new application
         # https://github.com/settings/applications/new
         env:
@@ -104,7 +104,7 @@ spec:
               key: cookie-secret
         # Recommended: remove email-domain=* in args and set an allowlist
         - name: OAUTH2_PROXY_GITHUB_USERS
-          value: jgeissler14
+          value: Jgeissler14
         image: quay.io/oauth2-proxy/oauth2-proxy:latest
         imagePullPolicy: Always
         name: oauth2-proxy
