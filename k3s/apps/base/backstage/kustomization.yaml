@@ -3,7 +3,3 @@ kind: Kustomization
 namespace: backstage
 resources:
   - backstage.yaml
-configMapGenerator:
-  - name: backstage-config
-    files:
-      - backstage-values.yaml
