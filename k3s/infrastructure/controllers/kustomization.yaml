@@ -4,7 +4,7 @@ resources:
   - cert-manager.yaml
   - ingress-nginx.yaml
   - kube-prometheus-stack.yaml
-  # - cloudnative-pg.yaml
+  - cloudnative-pg.yaml
   - external-dns
   
   - metallb.yaml
