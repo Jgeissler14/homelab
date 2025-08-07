@@ -50,3 +50,11 @@ spec:
             protocol: TCP
     admissionWebhooks:
       enabled: false
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: tcp-services
+  namespace: ingress-nginx
+data:
+  5432: cnpg-cluster/home-cluster-rw:5432
