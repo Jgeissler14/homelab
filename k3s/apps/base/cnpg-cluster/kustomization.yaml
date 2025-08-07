@@ -3,3 +3,4 @@ kind: Kustomization
 namespace: cnpg-cluster
 resources:
   - cnpg-cluster.yaml
+  - ingress.yaml
