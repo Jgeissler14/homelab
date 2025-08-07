@@ -18,14 +18,6 @@ spec:
         ports:
         - containerPort: 8000
         imagePullPolicy: Always
-        volumeMounts:
-        - name: job-templates
-          mountPath: /app/job-templates
-      volumes:
-      - name: job-templates
-        configMap:
-          name: job-templates
-      serviceAccountName: job-platform-backend-sa
 
 ---
 apiVersion: v1
