@@ -9,8 +9,6 @@ metadata:
     cert-manager.io/cluster-issuer: letsencrypt
     nginx.ingress.kubernetes.io/auth-url: "http://$host/oauth2/auth"
     nginx.ingress.kubernetes.io/auth-signin: "http://$host/oauth2/start?rd=$escaped_request_uri"
-    nginx.ingress.kubernetes.io/auth-response-headers: Authorization
-    nginx.ingress.kubernetes.io/proxy-set-headers: "job-platform/oauth2-proxy-headers"
 spec:
   ingressClassName: nginx
   tls:
@@ -35,6 +33,33 @@ spec:
                 name: job-platform-backend
                 port:
                   number: 80
+          - path: /oauth2
+            pathType: Prefix
+            backend:
+              service:
+                name: oauth2-proxy
+                port:
+                  number: 4180
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: job-platform-external-auth-oauth2
+  labels:
+    app.kubernetes.io/name: job-platform-external-auth-oauth2
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: jobs.joshgeissler.com
+    cert-manager.io/cluster-issuer: letsencrypt
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - jobs.joshgeissler.com
+      secretName: job-platform-tls
+  rules:
+    - host: jobs.joshgeissler.com
+      http:
+        paths:
           - path: /oauth2
             pathType: Prefix
             backend:
