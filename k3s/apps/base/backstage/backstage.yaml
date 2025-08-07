@@ -28,51 +28,35 @@ spec:
         name: backstage
       interval: 12h
   values:
-    appConfig:
-      app:
+    backstage:
+      appConfig:
+        techdocs:
+          builder: "local"
+        app:
+          # Let's test that everything is fine with comments
+          title: The very best Backstage Helm Chart! :D
+          baseUrl: https://backstage.joshgeissler.com
+        backend:
+          baseUrl: https://backstage.joshgeissler.com
         auth:
           providers:
             guest:
               dangerouslyAllowOutsideDevelopment: true
-    backend:
-      livenessProbe:
-        enabled: false
-      readinessProbe:
-        initialDelaySeconds: 30
-        periodSeconds: 10
-        timeoutSeconds: 5
-        failureThreshold: 6
-      resources:
-        requests:
-          cpu: 200m
-          memory: 512Mi
-        limits:
-          cpu: 1000m
-          memory: 1024Mi
----
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: backstage
-  labels:
-    app.kubernetes.io/name: backstage
-  annotations:
-    external-dns.alpha.kubernetes.io/hostname: backstage.joshgeissler.com
-    cert-manager.io/cluster-issuer: letsencrypt
-spec:
-  ingressClassName: nginx
-  rules:
-    - host: backstage.joshgeissler.com
-      http:
-        paths:
-          - path: "/"
-            pathType: ImplementationSpecific
-            backend:
-              service:
-                name: backstage
-                port:
-                  number: 7007
-  tls:
-    - hosts:
-        - backstage.joshgeissler.com
-      secretName: backstage-ingress
+
+    postgres:
+      enabled: true
+    ingress:
+      enabled: true
+      host: backstage.joshgeissler.com
+      tls:
+        enabled: true
+        secretName: backstage-ingress
+    metrics:
+      serviceMonitor:
+        enabled: true
+        annotations:
+          test: test
+        labels:
+          test: test
+        path: /metrics
+        port: http-backend
