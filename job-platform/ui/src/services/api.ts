@@ -1,24 +1,17 @@
-const API_BASE = '/api';
-
-export interface JobRequest {
-  template: string;
-  params: {
-    container_name: string;
-    image: string;
-    command: string[];
-  };
-}
-
-export interface JobResponse {
-  job_name: string;
-}
-
-export interface JobStatus {
-  status: string;
-}
-
 export interface JobLogs {
   log: string;
+}
+
+export interface User {
+  username: string;
+}
+
+export interface Job {
+  name: string;
+  status: string;
+  template: string;
+  user: string;
+  params: Record<string, any>;
 }
 
 export const api = {
@@ -55,6 +48,26 @@ export const api = {
       throw new Error(`Failed to get job logs: ${response.statusText}`);
     }
     
+    return response.json();
+  },
+
+  async getUser(): Promise<User> {
+    const response = await fetch(`${API_BASE}/user`);
+
+    if (!response.ok) {
+      throw new Error(`Failed to get user: ${response.statusText}`);
+    }
+
+    return response.json();
+  },
+
+  async getJobs(): Promise<{ jobs: Job[] }> {
+    const response = await fetch(`${API_BASE}/jobs`);
+
+    if (!response.ok) {
+      throw new Error(`Failed to get jobs: ${response.statusText}`);
+    }
+
     return response.json();
   },
 };

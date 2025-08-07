@@ -2,20 +2,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Play, Terminal, Clock } from "lucide-react";
+import { Job } from "@/services/api";
 
 interface JobCardProps {
-  job: {
-    id: string;
-    name: string;
-    description: string;
-    template: string;
-    params: {
-      container_name: string;
-      image: string;
-      command: string[];
-    };
-  };
-  onRun: (job: any) => void;
+  job: Job;
+  onRun: (job: Job) => void;
   isRunning?: boolean;
 }
 
@@ -30,17 +21,25 @@ export function JobCard({ job, onRun, isRunning }: JobCardProps) {
               {job.name}
             </CardTitle>
             <CardDescription className="text-muted-foreground">
-              {job.description}
+              {/* Assuming description is not available in the new Job interface, or needs to be derived */}
+              {job.template} job for {job.user}
             </CardDescription>
           </div>
           <Badge variant="secondary" className="text-xs">
-            {job.template}
+            {job.status}
           </Badge>
         </div>
       </CardHeader>
       
       <CardContent className="space-y-4">
+        {/* Assuming params are not directly available in the new Job interface, or need to be derived */}
         <div className="space-y-2">
+          <div className="flex items-center gap-2 text-sm">
+            <span className="text-muted-foreground">Container Name:</span>
+            <code className="text-primary bg-muted px-2 py-1 rounded font-mono text-xs">
+              {job.params.container_name}
+            </code>
+          </div>
           <div className="flex items-center gap-2 text-sm">
             <span className="text-muted-foreground">Image:</span>
             <code className="text-primary bg-muted px-2 py-1 rounded font-mono text-xs">

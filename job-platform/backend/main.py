@@ -1,10 +1,11 @@
-from fastapi import FastAPI, HTTPException, APIRouter
+from fastapi import FastAPI, HTTPException, APIRouter, Request
 from jinja2 import Environment, FileSystemLoader
 from kubernetes import client, config
 from pydantic import BaseModel
 from watchers import start_job_watcher
 import yaml
 import uuid
+import json
 
 app = FastAPI()
 api = APIRouter(prefix="/api")
@@ -24,8 +25,26 @@ jobs = {}
 
 
 @api.get("/jobs")
-def list_jobs():
-    return {"templates": ["default-job"]}
+def list_jobs(request: Request):
+    github_user = request.headers.get("X-Forwarded-User")
+    if not github_user:
+        raise HTTPException(status_code=401, detail="Unauthorized: X-Forwarded-User header missing")
+
+    # List all jobs and filter by the github-user label
+    try:
+        all_jobs = batch_api.list_namespaced_job(namespace="job-platform", label_selector=f"github-user={github_user}")
+        user_jobs = []
+        for job in all_jobs.items:
+            user_jobs.append({
+                "name": job.metadata.name,
+                "status": "Succeeded" if job.status.succeeded else "Failed" if job.status.failed else "Running",
+                "template": job.metadata.labels.get("template"),
+                "user": job.metadata.labels.get("github-user"),
+                "params": json.loads(job.metadata.annotations.get("job-params", "{}"))
+            })
+        return {"jobs": user_jobs}
+    except client.ApiException as e:
+        raise HTTPException(status_code=e.status, detail=e.reason)
 
 
 class JobRequest(BaseModel):
@@ -34,7 +53,11 @@ class JobRequest(BaseModel):
 
 
 @api.post("/jobs/run")
-def run_job(req: JobRequest):
+def run_job(req: JobRequest, request: Request):
+    github_user = request.headers.get("X-Forwarded-User")
+    if not github_user:
+        raise HTTPException(status_code=401, detail="Unauthorized: X-Forwarded-User header missing")
+
     if req.template != "default-job":
         raise HTTPException(status_code=404, detail="template not found")
     template = env.get_template(f"{req.template}.yaml.j2")
@@ -43,6 +66,18 @@ def run_job(req: JobRequest):
 
     # Deserialize YAML to dict and submit as Job
     body = yaml.safe_load(rendered)
+    
+    # Add user label to the job
+    if "metadata" not in body:
+        body["metadata"] = {}
+    if "labels" not in body["metadata"]:
+        body["metadata"]["labels"] = {}
+    body["metadata"]["labels"]["github-user"] = github_user
+    body["metadata"]["labels"]["template"] = req.template
+    if "annotations" not in body["metadata"]:
+        body["metadata"]["annotations"] = {}
+    body["metadata"]["annotations"]["job-params"] = json.dumps(req.params)
+
     batch_api.create_namespaced_job(namespace="job-platform", body=body)
 
     # Start watcher thread for this job
@@ -79,6 +114,14 @@ def job_logs(job_name: str):
     pod_name = pods.items[0].metadata.name
     log = core_api.read_namespaced_pod_log(name=pod_name, namespace="job-platform")
     return {"log": log}
+
+
+@api.get("/user")
+def get_user(request: Request):
+    github_user = request.headers.get("X-Forwarded-User")
+    if not github_user:
+        raise HTTPException(status_code=401, detail="Unauthorized: X-Forwarded-User header missing")
+    return {"username": github_user}
 
 
 app.include_router(api)

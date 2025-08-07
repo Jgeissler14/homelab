@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
-import { jobs } from "@/data/jobs";
+import { User, LogOut } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
 import { JobCard } from "@/components/JobCard";
+import { Job } from "@/services/api";
 import { JobStatus } from "@/components/JobStatus";
 import { LogsViewer } from "@/components/LogsViewer";
 import { api } from "@/services/api";
@@ -10,15 +13,31 @@ import { Container, Zap, Activity } from "lucide-react";
 interface RunningJob {
   jobName: string;
   status: string;
-  jobId: string;
 }
 
 const Index = () => {
   const [runningJobs, setRunningJobs] = useState<Record<string, RunningJob>>({});
   const [selectedLogs, setSelectedLogs] = useState<{ jobName: string; logs: string } | null>(null);
+  const [githubUser, setGithubUser] = useState<string | null>(null);
+  const [availableJobs, setAvailableJobs] = useState<Job[]>([]);
   const { toast } = useToast();
 
-  const runJob = async (job: any) => {
+  useEffect(() => {
+    api.getUser().then((data) => {
+      setGithubUser(data.username);
+    }).catch((error) => {
+      console.error("Error fetching user:", error);
+      // Handle unauthorized or other errors, e.g., redirect to a login page if necessary
+    });
+
+    api.getJobs().then((data) => {
+      setAvailableJobs(data.jobs);
+    }).catch((error) => {
+      console.error("Error fetching available jobs:", error);
+    });
+  }, []);
+
+  const runJob = async (job: Job) => {
     try {
       const response = await api.runJob({
         template: job.template,
@@ -27,10 +46,9 @@ const Index = () => {
 
       setRunningJobs(prev => ({
         ...prev,
-        [job.id]: {
+        [job.name]: {
           jobName: response.job_name,
           status: 'Running',
-          jobId: job.id,
         }
       }));
 
@@ -40,7 +58,7 @@ const Index = () => {
       });
 
       // Start polling for status
-      pollJobStatus(response.job_name, job.id);
+      pollJobStatus(response.job_name);
     } catch (error) {
       toast({
         title: "Error",
@@ -50,15 +68,15 @@ const Index = () => {
     }
   };
 
-  const pollJobStatus = async (jobName: string, jobId: string) => {
+  const pollJobStatus = async (jobName: string) => {
     const poll = async () => {
       try {
         const status = await api.getJobStatus(jobName);
         
         setRunningJobs(prev => ({
           ...prev,
-          [jobId]: {
-            ...prev[jobId],
+          [jobName]: {
+            ...prev[jobName],
             status: status.status,
           }
         }));
@@ -85,14 +103,14 @@ const Index = () => {
   const refreshJobStatus = async (jobName: string) => {
     try {
       const status = await api.getJobStatus(jobName);
-      const jobEntry = Object.entries(runningJobs).find(([_, job]) => job.jobName === jobName);
+      const jobEntry = Object.entries(runningJobs).find(([name, job]) => job.jobName === jobName);
       
       if (jobEntry) {
-        const [jobId] = jobEntry;
+        const [jobNameKey] = jobEntry;
         setRunningJobs(prev => ({
           ...prev,
-          [jobId]: {
-            ...prev[jobId],
+          [jobNameKey]: {
+            ...prev[jobNameKey],
             status: status.status,
           }
         }));
@@ -119,6 +137,10 @@ const Index = () => {
     }
   };
 
+  const handleLogout = () => {
+    window.location.href = "/oauth2/sign_out";
+  };
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -132,6 +154,15 @@ const Index = () => {
               </h1>
             </div>
             <div className="flex items-center gap-4 ml-auto">
+              {githubUser && (
+                <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <User className="h-4 w-4" />
+                  <span>{githubUser}</span>
+                  <Button variant="ghost" size="sm" onClick={handleLogout}>
+                    <LogOut className="h-4 w-4" />
+                  </Button>
+                </div>
+              )}
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Activity className="h-4 w-4" />
                 {Object.keys(runningJobs).length} active workloads
@@ -151,12 +182,12 @@ const Index = () => {
             </div>
             
             <div className="grid gap-4 md:grid-cols-2">
-              {jobs.map((job) => (
+              {availableJobs.map((job) => (
                 <JobCard
-                  key={job.id}
+                  key={job.name}
                   job={job}
                   onRun={runJob}
-                  isRunning={!!runningJobs[job.id] && runningJobs[job.id].status === 'Running'}
+                  isRunning={!!runningJobs[job.name] && runningJobs[job.name].status === 'Running'}
                 />
               ))}
             </div>
