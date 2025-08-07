@@ -7,9 +7,10 @@ metadata:
   annotations:
     external-dns.alpha.kubernetes.io/hostname: jobs.joshgeissler.com
     cert-manager.io/cluster-issuer: letsencrypt
-    nginx.ingress.kubernetes.io/auth-url: "https://$host/oauth2/auth"
-    nginx.ingress.kubernetes.io/auth-signin: "https://$host/oauth2/start?rd=$escaped_request_uri"
+    nginx.ingress.kubernetes.io/auth-url: "http://$host/oauth2/auth"
+    nginx.ingress.kubernetes.io/auth-signin: "http://$host/oauth2/start?rd=$escaped_request_uri"
     nginx.ingress.kubernetes.io/auth-response-headers: Authorization
+    nginx.ingress.kubernetes.io/proxy-set-headers: "job-platform/oauth2-proxy-headers"
 spec:
   ingressClassName: nginx
   tls:
@@ -64,6 +65,7 @@ spec:
         - --upstream=file:///dev/null
         - --email-domain=*
         - --http-address=0.0.0.0:4180
+        - --reverse-proxy=true
         # Register a new application
         # https://github.com/settings/applications/new
         env:

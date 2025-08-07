@@ -11,3 +11,4 @@ resources:
   - job-templates-configmap.yaml
   - serviceaccount.yaml
   - rbac.yaml
+  - oauth2-proxy-headers-configmap.yaml

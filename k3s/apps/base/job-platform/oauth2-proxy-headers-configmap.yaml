@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: oauth2-proxy-headers
+  namespace: job-platform
+data:
+  X-Forwarded-Proto: "https"
