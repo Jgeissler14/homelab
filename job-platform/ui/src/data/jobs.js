@@ -1,4 +1,3 @@
-
 export const jobs = [
   {
     id: 'ubuntu-sleep',
