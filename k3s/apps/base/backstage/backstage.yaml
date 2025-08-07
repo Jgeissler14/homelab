@@ -48,6 +48,10 @@ spec:
     ingress:
       enabled: true
       host: backstage.joshgeissler.com
+      className: nginx
+      annotations:
+        external-dns.alpha.kubernetes.io/hostname: backstage.joshgeissler.com
+        cert-manager.io/cluster-issuer: letsencrypt
       tls:
         enabled: true
         secretName: backstage-ingress
