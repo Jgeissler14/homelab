@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { fetchJobs } from './jobs';
+import { jobs } from './jobs';
 import {
   AppBar,
   Toolbar,
@@ -24,31 +24,18 @@ import {
 import { PlayArrow, Description } from '@mui/icons-material';
 
 function App() {
-  const [jobs, setJobs] = useState([]);
-  const [selectedJob, setSelectedJob] = useState(null);
-  const [params, setParams] = useState({});
+  const [selectedJob, setSelectedJob] = useState(jobs[0]);
+  const [params, setParams] = useState(selectedJob.params);
   const [jobName, setJobName] = useState('');
   const [status, setStatus] = useState('');
   const [log, setLog] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  useEffect(() => {
-    const getJobs = async () => {
-      const fetchedJobs = await fetchJobs();
-      setJobs(fetchedJobs);
-      if (fetchedJobs.length > 0) {
-        setSelectedJob(fetchedJobs[0]);
-        setParams(fetchedJobs[0].params);
-      }
-    };
-    getJobs();
-  }, []);
-
   const handleJobChange = (event) => {
     const job = jobs.find((j) => j.id === event.target.value);
     setSelectedJob(job);
-    setParams(job.params || {});
+    setParams(job.params);
   };
 
   const handleParamsChange = (event) => {
@@ -64,7 +51,7 @@ function App() {
 
     try {
       const res = await axios.post('/api/jobs/run', {
-        template_id: selectedJob.id,
+        template: selectedJob.template,
         params,
       });
       setJobName(res.data.job_name);
