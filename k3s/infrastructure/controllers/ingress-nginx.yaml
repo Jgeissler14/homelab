@@ -48,6 +48,10 @@ spec:
             port: 5432
             targetPort: 5432
             protocol: TCP
+      containerPort:
+        http: 80
+        https: 443
+        postgres: 5432
     admissionWebhooks:
       enabled: false
 ---
