@@ -1,10 +1,15 @@
-from fastapi import FastAPI, HTTPException, APIRouter
+from fastapi import FastAPI, HTTPException, APIRouter, Request
 from jinja2 import Environment, FileSystemLoader
 from kubernetes import client, config
 from pydantic import BaseModel
 from watchers import start_job_watcher
 import yaml
 import uuid
+import logging
+
+# Set up logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 app = FastAPI()
 api = APIRouter(prefix="/api")
@@ -22,6 +27,17 @@ batch_api = client.BatchV1Api()
 
 jobs = {}
 
+@app.middleware("http")
+async def log_user(request: Request, call_next):
+    user = request.headers.get("X-Forwarded-User")
+    groups = request.headers.get("X-Forwarded-Groups")
+    email = request.headers.get("X-Forwarded-Email")
+    preferred_username = request.headers.get("X-Forwarded-Preferred-Username")
+
+    logger.info(f"User: {user}, Groups: {groups}, Email: {email}, Preferred Username: {preferred_username}")
+
+    response = await call_next(request)
+    return response
 
 @api.get("/jobs")
 def list_jobs():

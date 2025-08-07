@@ -4,4 +4,8 @@ metadata:
   name: oauth2-proxy-headers
   namespace: job-platform
 data:
+  X-Forwarded-User: "{{ .User }}"
+  X-Forwarded-Groups: "{{ .Groups }}"
+  X-Forwarded-Email: "{{ .Email }}"
+  X-Forwarded-Preferred-Username: "{{ .PreferredUsername }}"
   X-Forwarded-Proto: "https"
