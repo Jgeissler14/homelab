@@ -6,7 +6,7 @@ metadata:
     app.kubernetes.io/name: job-platform
   annotations:
     external-dns.alpha.kubernetes.io/hostname: jobs.joshgeissler.com
-    cert-manager.io/cluster-issuer: letsencrypt-production
+    cert-manager.io/cluster-issuer: letsencrypt
     nginx.ingress.kubernetes.io/auth-url: "https://jobs.joshgeissler.com/oauth2/auth"
     nginx.ingress.kubernetes.io/auth-signin: "https://jobs.joshgeissler.com/oauth2/start?rd=$escaped_request_uri"
     nginx.ingress.kubernetes.io/auth-response-headers: Authorization
