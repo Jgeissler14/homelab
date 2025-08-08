@@ -69,10 +69,10 @@ export const jobs = [
       image: 'python:3.11-alpine',
       command: [
         'sh', '-lc',
-        'pip install --quiet textblob && '
-        'python -c "from textblob import TextBlob; '
-        'text=\'Customer service was fast and friendly!\'; '
-        'print(f\'Text: {text}\'); '
+        'pip install --quiet textblob && ',
+        'python -c "from textblob import TextBlob; ',
+        'text=\'Customer service was fast and friendly!\'; ',
+        'print(f\'Text: {text}\'); ',
         'print(\'Sentiment:\', TextBlob(text).sentiment)"'
       ],
     },
