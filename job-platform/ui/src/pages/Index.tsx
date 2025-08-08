@@ -22,6 +22,7 @@ const Index = () => {
     try {
       const response = await api.runJob({
         template: job.template,
+        id: job.id,
         params: job.params,
       });
 

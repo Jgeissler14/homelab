@@ -51,10 +51,8 @@ class JobRequest(BaseModel):
 
 @api.post("/jobs/run")
 def run_job(req: JobRequest):
-    if req.template != "default-job":
-        raise HTTPException(status_code=404, detail="template not found")
     template = env.get_template(f"{req.template}.yaml.j2")
-    job_name = f"{req.template}-{uuid.uuid4().hex[:6]}"
+    job_name = f"{req.id}-{uuid.uuid4().hex[:6]}"
     rendered = template.render(job_name=job_name, params=req.params)
 
     # Deserialize YAML to dict and submit as Job

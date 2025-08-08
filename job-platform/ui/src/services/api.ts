@@ -2,6 +2,7 @@ const API_BASE = '/api';
 
 export interface JobRequest {
   template: string;
+  id: string;
   params: {
     container_name: string;
     image: string;
