@@ -30,7 +30,8 @@ export const jobs = [
       container_name: 'url-health-check',
       image: 'curlimages/curl:latest',
       command: [
-        'sh','-lc',
+        'sh',
+        '-lc',
         'URL=https://example.com; ',
         'echo "Checking $URL"; ',
         'curl -s -o /dev/null -w "HTTP %{http_code} | time_total=%{time_total}s | size=%{size_download}B\\n" "$URL"'
@@ -46,7 +47,8 @@ export const jobs = [
       container_name: 'repo-scan',
       image: 'alpine/git:latest',
       command: [
-        'sh','-lc',
+        'sh',
+        '-lc',
         'set -e; REPO=https://github.com/octocat/Hello-World.git; ',
         'echo "Cloning $REPO (depth=1)"; ',
         'git clone --depth=1 "$REPO" repo >/dev/null 2>&1; ',
@@ -108,7 +110,8 @@ export const jobs = [
       container_name: 'dns-lookup',
       image: 'alpine:latest',
       command: [
-        'sh','-lc',
+        'sh',
+        '-lc',
         'set -e; HOST=example.com; echo "Resolving $HOST via 1.1.1.1"; ',
         'START=$(date +%s%3N); nslookup $HOST 1.1.1.1; ',
         'END=$(date +%s%3N); echo "Lookup took $((END-START)) ms"'
