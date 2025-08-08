@@ -43,13 +43,13 @@ export function JobCard({ job, onRun, isRunning }: JobCardProps) {
         <div className="space-y-2">
           <div className="flex items-center gap-2 text-sm">
             <span className="text-muted-foreground">Image:</span>
-            <code className="text-primary bg-muted px-2 py-1 rounded font-mono text-xs">
+            <code className="text-primary bg-muted px-2 py-1 rounded font-mono text-xs max-w-xs break-all whitespace-pre-line">
               {job.params.image}
             </code>
           </div>
           <div className="flex items-center gap-2 text-sm">
             <span className="text-muted-foreground">Command:</span>
-            <code className="text-primary bg-muted px-2 py-1 rounded font-mono text-xs">
+            <code className="text-primary bg-muted px-2 py-1 rounded font-mono text-xs max-w-xs break-all whitespace-pre-line">
               {job.params.command.join(' ')}
             </code>
           </div>
