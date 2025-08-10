@@ -9,5 +9,6 @@ resources:
   
   - metallb.yaml
   - metallb-l2.yaml
+  - kubevpn.yaml
   
   
