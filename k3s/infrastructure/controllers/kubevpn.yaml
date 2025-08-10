@@ -30,3 +30,6 @@ spec:
         name: kubevpn
         namespace: kubevpn
       interval: 12h
+  values:
+    service:
+      type: LoadBalancer
