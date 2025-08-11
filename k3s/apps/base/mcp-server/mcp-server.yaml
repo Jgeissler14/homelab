@@ -60,7 +60,7 @@ spec:
       http:
         paths:
           - path: "/"
-            pathType: prefix
+            pathType: Prefix
             backend:
               service:
                 name: mcp-server
