@@ -17,7 +17,6 @@ spec:
 
   monitoring:
     enablePodMonitor: true
-  values:
-    postgresql:
-      pg_hba: 
-        - host all all 0.0.0.0/0 md5
+  PostgresConfiguration:
+    pg_hba: 
+      - host all all 0.0.0.0/0 md5
