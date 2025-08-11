@@ -30,7 +30,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: mcp-server
-  namespace: mcp-server
+  labels:
+    app.kubernetes.io/name: mcp-server
+  annotations:
 spec:
   type: NodePort
   ports:
@@ -38,12 +40,16 @@ spec:
       targetPort: http
       protocol: TCP
       name: http
+  selector:
+    app.kubernetes.io/name: mcp-server
+
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: mcp-server
-  namespace: mcp-server
+  labels:
+    app.kubernetes.io/name: mcp-server
   annotations:
     external-dns.alpha.kubernetes.io/hostname: k8s.mcp.joshgeissler.com
     cert-manager.io/cluster-issuer: letsencrypt
@@ -53,8 +59,8 @@ spec:
     - host: k8s.mcp.joshgeissler.com
       http:
         paths:
-          - path: /
-            pathType: Prefix
+          - path: "/"
+            pathType: ImplementationSpecific
             backend:
               service:
                 name: mcp-server
@@ -63,4 +69,4 @@ spec:
   tls:
     - hosts:
         - k8s.mcp.joshgeissler.com
-      secretName: mcp-server-tls
+      secretName: mcp-server-ingress
