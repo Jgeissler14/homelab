@@ -6,3 +6,4 @@ resources:
   - ../base/backstage
   - ../base/homepage
   - ../base/job-platform
+  - ../base/mcp-server
